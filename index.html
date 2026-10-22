@@ -32,8 +32,37 @@
 
   <title>EnergieVriend Pro</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    /* Tekst die zichtbaar is tot Pro geladen is; ook voor controles zonder JavaScript (Mollie). */
+    #vooraf { max-width: 40rem; margin: 0 auto; padding: 2.5rem 16px 4rem; color: #13261a;
+      font: 1.0625rem/1.6 "Segoe UI", system-ui, sans-serif; }
+    #vooraf h1 { color: #2e7d32; font-size: 1.75rem; margin: 0 0 0.5rem; }
+    #vooraf a { color: #2e7d32; }
+    #vooraf .laden { color: #4c5f52; }
+    #vooraf footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #d4e4cf; color: #4c5f52; font-size: 0.95rem; }
+    html, body { background: #f4f8f1; }
+  </style>
 </head>
 <body>
+  <main id="vooraf">
+    <h1>EnergieVriend Pro</h1>
+    <p class="laden">Pro wordt geladen…</p>
+    <p>Webapp voor energieadviseurs en energiecoaches: per klant een stappenplan (zonnepanelen, batterij, warmtepomp,
+      isolatie) met bedragen per jaar, kosten en terugverdientijd, en een rapport als PDF met uw eigen naam en logo.
+      Klantgegevens blijven in uw eigen browser.</p>
+    <p>30 dagen gratis proberen. Daarna een jaarlicentie van € 290 excl. btw (€ 350,90 incl. btw), voor één adviseur
+      of bedrijf; verlengen gaat niet vanzelf. Een licentie aanvragen kan via
+      <a href="mailto:contact@energievriend.nl?subject=Licentie%20EnergieVriend%20Pro">contact@energievriend.nl</a>.</p>
+    <p>Meer uitleg: <a href="https://energievriend.nl/adviseurs">energievriend.nl/adviseurs</a> ·
+      <a href="voorwaarden.html">Gebruiksvoorwaarden</a> · <a href="privacy.html">Privacybeleid</a></p>
+    <footer>
+      Contact: <a href="mailto:contact@energievriend.nl">contact@energievriend.nl</a><br>
+      EnergieVriend is een product van VDLIntelligence (KvK 66394597, btw NL002029177B58).
+    </footer>
+  </main>
+  <script>
+    window.addEventListener('flutter-first-frame', () => document.getElementById('vooraf')?.remove());
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
