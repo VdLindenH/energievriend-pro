@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bedankt, EnergieVriend Pro</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.png">
+<style>
+  @font-face { font-family: "Atkinson"; src: url("assets/assets/fonts/atkinson-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Atkinson"; src: url("assets/assets/fonts/atkinson-Bold.ttf"); font-weight: 700; }
+  :root {
+    --bg: #f4f8f1; --surface: #ffffff; --ink: #13261a; --muted: #4c5f52;
+    --brand: #2e7d32; --accent: #ef7d1a; --line: #d4e4cf; --vlak: #e3f0df;
+    --font: "Atkinson", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1a11; --surface: #15261a; --ink: #e6f1e7; --muted: #a6baa9;
+      --brand: #81c784; --accent: #ffa65c; --line: #284230; --vlak: #1d3324; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font);
+    font-size: 1.125rem; line-height: 1.65; padding-inline: 16px; padding-block: 2.5rem 4rem; }
+  main { max-width: 36rem; margin-inline: auto; }
+  a { color: var(--brand); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  h1 { margin: 0 0 1rem; font-size: clamp(1.75rem, 5vw, 2.375rem); line-height: 1.2; color: var(--brand); }
+  p { margin: 0 0 0.9rem; }
+  .kaart { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 1.5rem; }
+  .klein { color: var(--muted); font-size: 1rem; }
+  .code { background: var(--vlak); border-radius: 12px; padding: 0.9rem 1rem; font-family: ui-monospace, Consolas, monospace;
+    font-size: 0.9rem; overflow-wrap: anywhere; user-select: all; margin: 0 0 1rem; }
+  .knop { display: inline-block; font: inherit; font-weight: 700; color: #fff; background: var(--brand); border: 0;
+    border-radius: 999px; padding: 0.75rem 1.4rem; cursor: pointer; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { .knop { color: #0e1a11; } }
+  .rand { background: transparent; color: var(--brand); border: 2px solid var(--brand); }
+  .knoppen { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.5rem 0 1.25rem; }
+  ol { padding-left: 1.25rem; display: grid; gap: 0.45rem; margin: 0; }
+  [hidden] { display: none !important; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: 1rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <section id="wachten" class="kaart">
+    <h1>Even geduld…</h1>
+    <p>We kijken of uw betaling binnen is. Dit duurt meestal een paar seconden.</p>
+  </section>
+
+  <section id="klaar" class="kaart" hidden>
+    <h1>Bedankt voor uw bestelling</h1>
+    <p>Licentie voor <strong id="naam"></strong>, geldig tot en met <strong id="tot"></strong>.</p>
+    <p>Uw licentiecode:</p>
+    <p id="code" class="code"></p>
+    <div class="knoppen">
+      <button id="kopieer" class="knop" type="button">Code kopiëren</button>
+      <a class="knop rand" href="./">Open Pro</a>
+    </div>
+    <ol>
+      <li>Open EnergieVriend Pro en ga naar <strong>Bedrijf</strong>, kaart <strong>Licentie</strong>.</li>
+      <li>Plak de code. Uw klantgegevens blijven gewoon staan.</li>
+    </ol>
+    <p class="klein" style="margin-top:1.25rem">U krijgt dezelfde code ook per e-mail. De factuur komt in een aparte e-mail.</p>
+  </section>
+
+  <section id="mislukt" class="kaart" hidden>
+    <h1>De betaling is niet gelukt</h1>
+    <p>Er is niets afgeschreven. U kunt het opnieuw proberen.</p>
+    <a class="knop" href="bestel.html">Opnieuw bestellen</a>
+  </section>
+
+  <section id="onbekend" class="kaart" hidden>
+    <h1>We vinden uw betaling niet</h1>
+    <p>Hebt u wel betaald? Mail dan naar <a href="mailto:contact@energievriend.nl">contact@energievriend.nl</a>; u krijgt de code alsnog per e-mail.</p>
+  </section>
+
+  <footer>Vragen? <a href="mailto:contact@energievriend.nl">contact@energievriend.nl</a></footer>
+</main>
+<script>
+  // Adres van de bestelfunctie (Cloudflare Worker, map energievriend_bestel/).
+  const FUNCTIE = 'https://energievriend-bestel.energievriend-bestel.workers.dev';
+  const MISLUKT = ['failed', 'canceled', 'expired'];
+
+  const toon = (id) => {
+    for (const s of document.querySelectorAll('main > section')) s.hidden = s.id !== id;
+  };
+
+  async function kijk(poging) {
+    const id = new URLSearchParams(location.search).get('id');
+    if (!id) return toon('onbekend');
+    try {
+      const uit = await (await fetch(`${FUNCTIE}/status?id=${encodeURIComponent(id)}`)).json();
+      if (uit.status === 'paid') {
+        const [j, m, d] = uit.tot.split('-');
+        document.getElementById('naam').textContent = uit.naam;
+        document.getElementById('tot').textContent = `${d}-${m}-${j}`;
+        document.getElementById('code').textContent = uit.code;
+        return toon('klaar');
+      }
+      if (MISLUKT.includes(uit.status)) return toon('mislukt');
+      if (uit.fout) return toon('onbekend');
+    } catch {
+      // Geen verbinding: gewoon opnieuw proberen.
+    }
+    // Nog open of in behandeling: ruim een minuut blijven kijken.
+    if (poging < 30) setTimeout(() => kijk(poging + 1), 2000);
+    else toon('onbekend');
+  }
+
+  document.getElementById('kopieer').addEventListener('click', async (e) => {
+    try {
+      await navigator.clipboard.writeText(document.getElementById('code').textContent);
+      e.target.textContent = 'Gekopieerd';
+    } catch {
+      e.target.textContent = 'Selecteer de code en kopieer hem';
+    }
+  });
+
+  kijk(0);
+</script>
+</body>
+</html>

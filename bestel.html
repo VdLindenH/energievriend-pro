@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licentie bestellen, EnergieVriend Pro</title>
+<meta name="description" content="Bestel een jaarlicentie voor EnergieVriend Pro. Na betaling ontvangt u direct uw licentiecode.">
+<link rel="icon" href="favicon.png">
+<style>
+  @font-face { font-family: "Atkinson"; src: url("assets/assets/fonts/atkinson-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Atkinson"; src: url("assets/assets/fonts/atkinson-Bold.ttf"); font-weight: 700; }
+  :root {
+    --bg: #f4f8f1; --surface: #ffffff; --ink: #13261a; --muted: #4c5f52;
+    --brand: #2e7d32; --accent: #ef7d1a; --line: #d4e4cf; --fout: #b3261e;
+    --font: "Atkinson", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1a11; --surface: #15261a; --ink: #e6f1e7; --muted: #a6baa9;
+      --brand: #81c784; --accent: #ffa65c; --line: #284230; --fout: #ffb4ab; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font);
+    font-size: 1.125rem; line-height: 1.65; padding-inline: 16px; padding-block: 2.5rem 4rem; }
+  main { max-width: 36rem; margin-inline: auto; }
+  a { color: var(--brand); }
+  a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .terug { display: inline-block; margin-bottom: 1.5rem; font-size: 1rem; }
+  h1 { margin: 0 0 1rem; font-size: clamp(1.75rem, 5vw, 2.375rem); line-height: 1.2; color: var(--brand); }
+  p { margin: 0 0 0.9rem; }
+  .kaart { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 1.5rem; }
+  .prijs { font-size: 1.5rem; font-weight: 700; margin: 0; }
+  .klein { color: var(--muted); font-size: 1rem; }
+  label { display: block; font-weight: 700; margin: 1.1rem 0 0.35rem; }
+  input[type=text], input[type=email] { width: 100%; font: inherit; color: var(--ink); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 12px; padding: 0.7rem 0.9rem; }
+  .vink { display: flex; gap: 0.6rem; align-items: flex-start; font-weight: 400; }
+  .vink input { width: 1.25rem; height: 1.25rem; margin-top: 0.3rem; accent-color: var(--brand); flex: none; }
+  button { margin-top: 1.5rem; width: 100%; font: inherit; font-weight: 700; color: #fff; background: var(--brand);
+    border: 0; border-radius: 999px; padding: 0.85rem 1.5rem; cursor: pointer; }
+  @media (prefers-color-scheme: dark) { button { color: #0e1a11; } }
+  button:disabled { opacity: 0.6; cursor: default; }
+  .fout { color: var(--fout); margin: 1rem 0 0; min-height: 1.65em; }
+  .rij { display: grid; grid-template-columns: 9rem 1fr; gap: 0 0.75rem; }
+  @media (max-width: 380px) { .rij { grid-template-columns: 1fr; } }
+  ul { margin: 1.5rem 0 0; padding-left: 1.25rem; display: grid; gap: 0.45rem; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: 1rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="terug" href="./">← Terug naar EnergieVriend Pro</a>
+  <h1>Licentie bestellen</h1>
+
+  <div class="kaart">
+    <p class="prijs">€ 290 per jaar <span class="klein">excl. btw</span></p>
+    <p class="klein">U betaalt € 350,90 incl. 21% btw, met iDEAL. Alleen voor bedrijven en organisaties in Nederland.</p>
+
+    <p id="verleng" class="klein" hidden>U verlengt uw licentie. De nieuwe licentie loopt een jaar vanaf de einddatum van uw huidige licentie.</p>
+
+    <form id="formulier" novalidate>
+      <label for="naam">Naam van uw bedrijf of organisatie</label>
+      <input id="naam" name="naam" type="text" autocomplete="organization" maxlength="100" required>
+      <p class="klein" style="margin:0.35rem 0 0">Deze naam staat in uw licentiecode en op de factuur.</p>
+
+      <label for="email">E-mailadres</label>
+      <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+      <p class="klein" style="margin:0.35rem 0 0">Hierheen sturen we de code en de factuur.</p>
+
+      <label for="adres">Straat en huisnummer</label>
+      <input id="adres" name="adres" type="text" autocomplete="street-address" maxlength="100" required>
+
+      <div class="rij">
+        <div>
+          <label for="postcode">Postcode</label>
+          <input id="postcode" name="postcode" type="text" autocomplete="postal-code" maxlength="7" required>
+        </div>
+        <div>
+          <label for="plaats">Plaats</label>
+          <input id="plaats" name="plaats" type="text" autocomplete="address-level2" maxlength="60" required>
+        </div>
+      </div>
+
+      <label for="nummer">KvK-nummer of btw-nummer</label>
+      <input id="nummer" name="nummer" type="text" maxlength="20" required>
+      <p class="klein" style="margin:0.35rem 0 0">Voor de factuur.</p>
+
+      <label class="vink"><input id="akkoord" type="checkbox"> <span>Ik ga akkoord met de <a href="voorwaarden.html" target="_blank">gebruiksvoorwaarden</a> en heb het <a href="privacy.html" target="_blank">privacybeleid</a> gelezen.</span></label>
+
+      <button id="knop" type="submit">Betalen met iDEAL</button>
+      <p id="fout" class="fout" role="alert"></p>
+    </form>
+
+    <ul class="klein">
+      <li>Na betaling ziet u de licentiecode direct, en u krijgt hem ook per e-mail.</li>
+      <li>De licentie geldt een jaar, voor één adviseur of bedrijf.</li>
+      <li>Verlengen gaat niet vanzelf.</li>
+    </ul>
+  </div>
+
+  <footer>
+    Vragen? <a href="mailto:contact@energievriend.nl">contact@energievriend.nl</a><br>
+    EnergieVriend is een product van VDLIntelligence (KvK 66394597, btw NL002029177B58). Betalen gaat via Mollie.
+  </footer>
+</main>
+<script>
+  // Adres van de bestelfunctie (Cloudflare Worker, map energievriend_bestel/).
+  const FUNCTIE = 'https://energievriend-bestel.energievriend-bestel.workers.dev';
+
+  const vraag = new URLSearchParams(location.search);
+  const naam = document.getElementById('naam');
+  if (vraag.get('naam')) naam.value = vraag.get('naam').slice(0, 100);
+  // Verlengen vanuit Pro: de huidige code gaat mee, de nieuwe licentie sluit erop aan.
+  const verleng = vraag.get('code') || undefined;
+  if (verleng) {
+    document.querySelector('h1').textContent = 'Licentie verlengen';
+    document.getElementById('verleng').hidden = false;
+  }
+
+  document.getElementById('formulier').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const fout = document.getElementById('fout');
+    const knop = document.getElementById('knop');
+    fout.textContent = '';
+    const gegevens = {
+      naam: naam.value,
+      email: document.getElementById('email').value,
+      adres: document.getElementById('adres').value,
+      postcode: document.getElementById('postcode').value,
+      plaats: document.getElementById('plaats').value,
+      nummer: document.getElementById('nummer').value,
+      verleng,
+      akkoord: document.getElementById('akkoord').checked,
+    };
+    knop.disabled = true;
+    knop.textContent = 'Even geduld…';
+    try {
+      const antwoord = await fetch(`${FUNCTIE}/bestel`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(gegevens),
+      });
+      const uit = await antwoord.json();
+      if (uit.url) { location.href = uit.url; return; }
+      fout.textContent = uit.fout || 'Er ging iets mis. Probeer het later opnieuw.';
+    } catch {
+      fout.textContent = 'Geen verbinding. Probeer het later opnieuw.';
+    }
+    knop.disabled = false;
+    knop.textContent = 'Betalen met iDEAL';
+  });
+</script>
+</body>
+</html>
