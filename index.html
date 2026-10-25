@@ -47,18 +47,22 @@
   <main id="vooraf">
     <h1>EnergieVriend Pro</h1>
     <p class="laden">Pro wordt geladen…</p>
+    <!-- Alleen zonder JavaScript (bijv. de controle van Mollie): wie Pro
+         gewoon opent, ziet deze tekst niet even voorbijflitsen (25-10-2026). -->
+    <noscript>
     <p>Webapp voor energieadviseurs en energiecoaches: per klant een stappenplan (zonnepanelen, batterij, warmtepomp,
       isolatie) met bedragen per jaar, kosten en terugverdientijd, en een rapport als PDF met uw eigen naam en logo.
       Klantgegevens blijven in uw eigen browser.</p>
     <p>30 dagen gratis proberen. Daarna een jaarlicentie van € 290 excl. btw (€ 350,90 incl. btw), voor één adviseur
-      of bedrijf; verlengen gaat niet vanzelf. Een licentie aanvragen kan via
-      <a href="mailto:contact@energievriend.nl?subject=Licentie%20EnergieVriend%20Pro">contact@energievriend.nl</a>.</p>
+      of bedrijf; verlengen gaat niet vanzelf. Bestellen kan via
+      <a href="https://energievriend.nl/adviseurs">energievriend.nl/adviseurs</a>.</p>
     <p>Meer uitleg: <a href="https://energievriend.nl/adviseurs">energievriend.nl/adviseurs</a> ·
       <a href="voorwaarden.html">Gebruiksvoorwaarden</a> · <a href="privacy.html">Privacybeleid</a></p>
     <footer>
       Contact: <a href="mailto:contact@energievriend.nl">contact@energievriend.nl</a><br>
       EnergieVriend is een product van VDLIntelligence (KvK 66394597, btw NL002029177B58).
     </footer>
+    </noscript>
   </main>
   <script>
     window.addEventListener('flutter-first-frame', () => document.getElementById('vooraf')?.remove());
