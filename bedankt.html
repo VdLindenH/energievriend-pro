@@ -55,7 +55,7 @@
     <p id="code" class="code"></p>
     <div class="knoppen">
       <button id="kopieer" class="knop" type="button">Code kopiëren</button>
-      <a class="knop rand" href="./">Open Pro</a>
+      <a id="openPro" class="knop rand" href="./">Open Pro en activeer</a>
     </div>
     <ol>
       <li id="stap1">Open EnergieVriend Pro en ga naar <strong>Instellingen</strong> (op een laptop: <strong>Back-up en licentie</strong>), kaart <strong>Licentie</strong>.</li>
@@ -100,12 +100,18 @@
           document.getElementById('code').textContent = `${uit.code}\n\n${uit.codeGebouwen}`;
           document.getElementById('codeKop').textContent = 'Uw licentiecodes (Pro en Pro Gebouwen):';
           document.getElementById('kopieer').textContent = 'Codes kopiëren';
-          document.getElementById('stap2').textContent = 'Plak beide codes in één keer in het bovenste vak. Uw klantgegevens blijven gewoon staan.';
         } else {
           document.getElementById('code').textContent = uit.code;
         }
+        // "Open Pro" geeft de code(s) mee na het #: die gaan niet naar de server,
+        // en Pro activeert ze zelf.
+        const codes = uit.codeGebouwen ? `${uit.code} ${uit.codeGebouwen}` : uit.code;
+        document.getElementById('openPro').href = `./#/backup?code=${encodeURIComponent(codes)}`;
+        document.getElementById('stap1').textContent = 'Klik op "Open Pro en activeer": Pro zet de code er zelf in (in deze browser).';
+        const welke = uit.codeGebouwen ? 'beide codes (in één keer)' : 'de code';
+        document.getElementById('stap2').textContent = `Gebruikt u Pro in een andere browser of op een ander apparaat? Kopieer ${welke} dan en plak ${uit.codeGebouwen ? 'ze' : 'hem'} daar bij Instellingen (op een laptop: Back-up en licentie), kaart Licentie. Uw klantgegevens blijven gewoon staan.`;
         if (uit.product === 'gebouwen') {
-          document.getElementById('stap2').textContent = 'Plak de code. Pro Gebouwen loopt tot dezelfde dag als uw licentie voor Pro. Uw klantgegevens blijven gewoon staan.';
+          document.getElementById('stap2').textContent += ' Pro Gebouwen loopt tot dezelfde dag als uw licentie voor Pro.';
         }
         return toon('klaar');
       }
