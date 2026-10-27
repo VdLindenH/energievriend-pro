@@ -58189,7 +58189,7 @@ for(;;)switch(s){case 0:s=3
 return A.j(A.aba(),$async$z6)
 case 3:o=b
 if(p.c==null||o==null||o.length===0){s=1
-break}if(o!=="20261027113150"&&!p.z)p.Z(new A.aLE(p))
+break}if(o!=="20261027114908"&&!p.z)p.Z(new A.aLE(p))
 case 1:return A.r(q,r)}})
 return A.t($async$z6,r)},
 z9(){var s=0,r=A.u(t.H),q,p=this,o,n
@@ -58419,7 +58419,7 @@ $0(){return this.a.w=!0},
 $S:0}
 A.aLX.prototype={
 $2(a,b){var s,r=null,q=b.b>=1000,p=this.a,o=p.aCg(),n=t.p,m=A.b([],n)
-if(p.z)m.push(A.cd(r,A.by(A.b([B.Yd,A.eA(B.b6n,r,r,A.bq9(),r,r)],n),B.a4,B.J,B.O,0,r),B.Q,B.cw,r,r,r,r,r,B.x1,r,r,1/0))
+if(p.z)m.push(A.cd(r,A.by(A.b([B.Yd,A.eA(B.b6l,r,r,A.bq9(),r,r)],n),B.a4,B.J,B.O,0,r),B.Q,B.cw,r,r,r,r,r,B.x1,r,r,1/0))
 if(o!=null)m.push(A.cd(r,A.a8(o,r,r,r,r,r,r),B.Q,B.cw,r,r,r,r,r,B.XM,r,r,1/0))
 m.push(A.dw(p.avD(q),1))
 s=A.mM(!0,new A.cz(B.eZ,r,r,new A.du(B.S3,A.bk(m,B.a4,r,B.J,B.O,0),r),r),B.aB,!0)
@@ -58441,7 +58441,7 @@ L(a){var s=null,r=this.d,q=this.c,p=A.ch(10)
 return A.cd(s,A.q8(q.c,B.I,s,r*0.6),B.Q,s,s,new A.bH(q.d,s,s,p,s,s,B.as),s,r,s,s,s,s,r)}}
 A.a9G.prototype={
 a1s(a){var s=null,r=a.a===this.c,q=r?B.cw:B.a7,p=A.b([new A.PB(a,36,s),A.dw(A.a8(a.b,s,s,s,A.fx(s,s,s,s,s,s,s,s,s,s,s,17,s,s,r?B.at:B.a2,s,s,!0,s,s,s,s,s,s,s,s),s,s),1)],t.p),o=a.f
-if(o==="proef")p.push(A.cd(s,B.b5Z,B.Q,s,s,new A.bH(B.VC,s,s,A.ch(999),s,s,B.as),s,s,s,B.Y_,s,s,s))
+if(o==="proef")p.push(A.cd(s,B.b5Y,B.Q,s,s,new A.bH(B.VC,s,s,A.ch(999),s,s,B.as),s,s,s,B.Y_,s,s,s))
 else if(o==="slot")p.push(B.ZD)
 else if(o!=null)p.push(A.a8(o,s,s,s,B.b4j,s,s))
 return A.h5(!1,B.an,!0,s,A.hw(!1,s,!0,new A.b0(B.Xp,A.by(p,B.a4,B.J,B.O,14,s),s),B.dT,!0,s,s,s,s,s,s,s,s,new A.aQV(this,a),s,s,s,s,s,s,s),B.Q,q,0,s,s,B.dT,s,s,B.cU)},
@@ -59061,7 +59061,7 @@ case 2:q.a.aDA()
 return A.r(null,r)}})
 return A.t($async$FB,r)},
 L(a){var s=this,r=null,q=s.d,p=A.y3(new A.EF(q,new A.aB2(s),B.b5A,B.qC,r),r,r,r)
-return A.AU(r,A.mM(!0,A.jf(A.jI(new A.du(B.RT,A.bk(A.b([B.QR,B.b66,B.b5G,p,B.qw,A.hq(B.b5W,q&&!s.e?s.gaC1():r)],t.p),B.aW,r,B.J,B.O,16),r),B.bM,B.aL),r,r),B.aB,!0),r)}}
+return A.AU(r,A.mM(!0,A.jf(A.jI(new A.du(B.RT,A.bk(A.b([B.QR,B.b65,B.b5G,p,B.qw,A.hq(B.b5V,q&&!s.e?s.gaC1():r)],t.p),B.aW,r,B.J,B.O,16),r),B.bM,B.aL),r,r),B.aB,!0),r)}}
 A.aB0.prototype={
 $0(){return this.a.e=!0},
 $S:0}
@@ -59128,7 +59128,7 @@ A.ci(l,!1).dZ(n)
 case 13:case 10:case 7:case 4:case 1:return A.r(q,r)}})
 return A.t($async$vr,r)},
 L(a){var s,r,q,p,o,n,m=this,l=null,k=m.x?B.eq:m.a.c
-if(m.r)return A.pr(A.b([A.eA(B.b74,l,l,new A.aQy(m),l,l),A.hq(B.b60,new A.aQz(a))],t.p),B.aZO,!1,B.PB)
+if(m.r)return A.pr(A.b([A.eA(B.b74,l,l,new A.aQy(m),l,l),A.hq(B.b6_,new A.aQz(a))],t.p),B.aZO,!1,B.PB)
 s=k===B.eq
 r=A.a8(s?"Opslaan":"Wachtwoord",l,l,l,l,l,l)
 q=t.p
@@ -59137,7 +59137,7 @@ if(s)B.n.T(p,A.b([A.iX(l,B.br,!1,l,!0,B.ah,l,A.jV(),m.e,l,l,l,l,l,2,B.a_o,B.aG,!
 o=m.f
 if(o!=null)p.push(A.a8(o,l,l,l,B.b2G,l,l))
 if(s)p.push(new A.cz(B.c6,l,l,A.eA(B.PB,l,l,new A.aQC(m),l,l),l))
-if(k===B.uZ)p.push(new A.cz(B.c6,l,l,A.eA(B.b6m,l,l,new A.aQD(m),l,l),l))
+if(k===B.uZ)p.push(new A.cz(B.c6,l,l,A.eA(B.b6k,l,l,new A.aQD(m),l,l),l))
 p=A.dg(A.bk(p,B.aw,l,B.J,B.bs,12),l,420)
 o=A.eA(B.hP,l,l,new A.aQE(a),l,l)
 n=m.w?l:m.gaty()
@@ -59203,7 +59203,7 @@ return new A.ta(s==null?B.eq:B.uZ,s,null)},
 $S:153}
 A.aUg.prototype={
 $1(a){var s=null
-return A.pr(A.b([A.eA(B.hP,s,s,new A.aUe(a),s,s),A.hq(B.ub,new A.aUf(a))],t.p),B.b5S,!1,B.b6F)},
+return A.pr(A.b([A.eA(B.hP,s,s,new A.aUe(a),s,s),A.hq(B.ub,new A.aUf(a))],t.p),B.b5R,!1,B.b6D)},
 $S:56}
 A.aUe.prototype={
 $0(){A.ci(this.a,!1).dZ(!1)
@@ -59227,7 +59227,7 @@ s=A.aiK(new A.aBO(),p,t.Q0)
 p=q.e
 if(p===$)p=q.e=q.a.c.eY("bewaar_modus")
 r=t.p
-return new A.dc("Back-up",A.b([B.b6B,s,A.aiK(new A.aBP(q),p,t.ob),A.eJ(B.bv,A.b([A.ud(B.qt,B.nX,new A.aBQ(q,a)),A.kl(B.xL,B.ub,new A.aBR(q,a),null)],r),B.c3,8,12),B.b5g],r),null)}}
+return new A.dc("Back-up",A.b([B.b6z,s,A.aiK(new A.aBP(q),p,t.ob),A.eJ(B.bv,A.b([A.ud(B.qt,B.nX,new A.aBQ(q,a)),A.kl(B.xL,B.ub,new A.aBR(q,a),null)],r),B.c3,8,12),B.b5g],r),null)}}
 A.aBM.prototype={
 $0(){var s=this.a
 s.d=s.a.c.x6()
@@ -59304,13 +59304,13 @@ q=A.l3(B.bY,1)
 p=A.ch(12)
 o=d.e
 n=o==null
-o=n?B.b6Z:new A.zp(A.b2Z(e,e,new A.qF(o,1)),e,e,B.fa,B.Sc,!1,e)
+o=n?B.b6Y:new A.zp(A.b2Z(e,e,new A.qF(o,1)),e,e,B.fa,B.Sc,!1,e)
 p=A.cd(B.b0,o,B.Q,e,e,new A.bH(e,e,q,p,e,e,B.as),e,60,e,e,e,e,120)
 q=t.p
 o=A.b([A.kl(B.ZR,A.a8(n?"Logo kiezen":"Ander logo",e,e,e,e,e,e),new A.aC_(f,d),e)],q)
-if(!n)o.push(A.eA(B.b6b,e,e,new A.aC0(f,d),e,e))
-m=new A.dc("Op elk rapport",A.b([s,r,A.by(A.b([p,new A.h1(1,B.cR,A.eJ(B.bv,o,B.c3,0,8),e)],q),B.a4,B.J,B.O,12,e),A.axQ(B.aB,new A.aC1(f,d),B.b67,B.b6U,d.f),A.Bz(B.a_i,d.c,e,4,new A.aC2(f))],q),e)
-s=A.b([B.b5O],q)
+if(!n)o.push(A.eA(B.b6a,e,e,new A.aC0(f,d),e,e))
+m=new A.dc("Op elk rapport",A.b([s,r,A.by(A.b([p,new A.h1(1,B.cR,A.eJ(B.bv,o,B.c3,0,8),e)],q),B.a4,B.J,B.O,12,e),A.axQ(B.aB,new A.aC1(f,d),B.b66,B.b6T,d.f),A.Bz(B.a_i,d.c,e,4,new A.aC2(f))],q),e)
+s=A.b([B.b5N],q)
 for(r=d.d,l=0;l<8;++l){k=B.aP0[l]
 p=k.a
 j=A.te(B.hJ.kk().h(0,p))
@@ -59397,9 +59397,9 @@ aCp(a){var s=this,r=null,q=a.p2,p=A.b([A.Bz(B.a_j,s.a.c.b,r,1,new A.aFX(s)),A.Bz
 if(q==="vast")p.push(A.us(new A.aG5(s,a),"\u20ac per kWh",r,r,"Stroomprijs",0,!0,"vast_tarief",a.p4))
 p.push(A.us(new A.aG6(s,a),"\u20ac per m\xb3",r,"gemiddeld "+("\u20ac "+A.a9(A.an(1.45,2),1000)),"Gasprijs",1.45,!1,"gasprijs",a.k4))
 return p},
-ajo(a){var s,r,q,p,o=this,n=null,m=a.w,l=A.b([A.us(new A.aFO(o,a),"Wp",n,n,"Zonnepanelen",0,!1,"panelen",a.ay),A.us(new A.aFP(o,a),"kWh",n,n,"Thuisbatterij",0,!1,"batterij",a.f),new A.kb("Warmtepomp",a.fx,B.aRR,new A.aFQ(o,a),n),A.axQ(B.aB,new A.aFR(o,a),n,B.b5B,a.id),A.axQ(B.aB,new A.aFS(o,a),n,B.b6u,m)],t.p)
+ajo(a){var s,r,q,p,o=this,n=null,m=a.w,l=A.b([A.us(new A.aFO(o,a),"Wp",n,n,"Zonnepanelen",0,!1,"panelen",a.ay),A.us(new A.aFP(o,a),"kWh",n,n,"Thuisbatterij",0,!1,"batterij",a.f),new A.kb("Warmtepomp",a.fx,B.aRR,new A.aFQ(o,a),n),A.axQ(B.aB,new A.aFR(o,a),n,B.b5B,a.id),A.axQ(B.aB,new A.aFS(o,a),n,B.b6s,m)],t.p)
 if(m)l.push(A.us(new A.aFT(o,a),"km",n,n,"Kilometers per jaar",0,!1,"ev_km",a.y))
-l.push(B.b5L)
+l.push(B.b5K)
 for(m=a.x1,s=0;s<3;++s){r=B.iZ[s]
 q=r.c
 p=B.aRU.h(0,q)
@@ -59412,7 +59412,7 @@ o=this.a.c.f.h(0,q)
 if(o==null)o=0
 n.push(new A.ur(q,r.b,o,new A.aFW(this,r),r.c,!1,r.d,0,p,null))}return n},
 auy(){var s=null
-return A.b([A.Bz(B.a_m,this.a.c.e,s,6,new A.aFV(this)),B.fz,A.kl(B.l3,B.b6I,this.a.r,A.aW8(s,s,s,s,s,s,s,s,s,B.kp,s,s,s,s,s,B.RG,s,s,s,s))],t.p)},
+return A.b([A.Bz(B.a_m,this.a.c.e,s,6,new A.aFV(this)),B.fz,A.kl(B.l3,B.b6G,this.a.r,A.aW8(s,s,s,s,s,s,s,s,s,B.kp,s,s,s,s,s,B.RG,s,s,s,s))],t.p)},
 L(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e=g.a.c.d,d=g.d
 A:{if(0===d){s=g.aCp(e)
 break A}if(1===d){s=g.ajo(e)
@@ -59593,9 +59593,9 @@ case 4:p.a.PB()
 case 1:return A.r(q,r)}})
 return A.t($async$zI,r)},
 a_J(){var s=A.kl(B.xN,B.PA,new A.aHc(this),null)
-return A.eJ(B.bv,A.b([s,A.ud(B.xP,B.b6Y,this.f==null?null:this.gatT())],t.p),B.c3,8,12)},
+return A.eJ(B.bv,A.b([s,A.ud(B.xP,B.b6X,this.f==null?null:this.gatT())],t.p),B.c3,8,12)},
 a_K(){var s,r=this,q=null,p=r.gdT().b.length===0?"Zonder naam":r.gdT().b,o=t.p,n=A.b([],o),m=r.a
-if(m.e)n.push(A.by(A.b([A.hw(!1,q,!0,B.b5u,q,!0,q,q,q,q,q,q,q,q,m.r,q,q,q,q,q,q,q),B.b6c,new A.h1(1,B.cR,A.a8(p,q,B.c2,q,B.bh,q,q),q)],o),B.a4,B.J,B.O,0,q))
+if(m.e)n.push(A.by(A.b([A.hw(!1,q,!0,B.b5u,q,!0,q,q,q,q,q,q,q,q,m.r,q,q,q,q,q,q,q),B.b6b,new A.h1(1,B.cR,A.a8(p,q,B.c2,q,B.bh,q,q),q)],o),B.a4,B.J,B.O,0,q))
 n.push(A.a8(p,q,q,q,B.nT,q,q))
 if(r.gdT().c.length!==0)n.push(A.a8(r.gdT().c,q,q,q,B.jJ,q,q))
 s=A.bk(n,B.aw,q,B.J,B.O,0)
@@ -59838,7 +59838,7 @@ return A.dg(A.mQ(B.dX,A.b([A.lu(0,A.cd(q,A.q8(A.aYq(n,o),s.c,q,27),B.Q,q,q,new A
 a0y(a){var s=new A.aME(a),r=A.b([s.$3(B.Zt,"Stap omhoog",this.d),s.$3(B.Zs,"Stap omlaag",this.e)],t.p)
 return a?A.by(r,B.a4,B.J,B.bs,8,null):A.bk(r,B.a4,null,B.J,B.bs,6)},
 Oj(a){var s=null,r=A.b([],t.p)
-if(a)r.push(B.b5R)
+if(a)r.push(B.b5Q)
 r.push(A.aWO(s,s,s,s,!1,B.aG,s,s,s,B.jg,s,s,new A.aMF(this),s,s,s,s,s,s,s,s,!0))
 return A.by(r,B.a4,B.J,B.bs,6,s)},
 Ov(){var s=null,r=this.r,q=A.ch(999),p=A.l3(B.bY,1)
@@ -59856,7 +59856,7 @@ r=A.b([new A.h1(1,B.cR,A.a8(s?k:h,l,l,l,B.nV,l,l),l)],t.p)
 q=m.y
 if(q!=null)r.push(new A.hv(!0,s?k:h,q,l))
 h=m.f
-if(h)r.push(A.cd(l,B.b6L,B.Q,l,l,new A.bH(B.wi,l,l,A.ch(999),l,l,B.as),l,l,B.XZ,B.pI,l,l,l))
+if(h)r.push(A.cd(l,B.b6J,B.Q,l,l,new A.bH(B.wi,l,l,A.ch(999),l,l,B.as),l,l,B.XZ,B.pI,l,l,l))
 p=A.by(r,B.a4,B.J,B.O,0,l)
 if(g){g=m.z==="adviseur"
 s=g?"Eigen prijs":"Richtprijs, geen offerte"
@@ -59899,7 +59899,7 @@ p=t.p
 o=A.b([m.b,m.d.$1$smal(!1)],p)
 n=m.e
 if(n!=null)o.push(n)
-r=A.by(A.b([r,q,A.dw(A.bk(o,B.aw,l,B.J,B.O,2),1),A.bk(A.b([m.c,B.b5N],p),B.e2,l,B.J,B.O,0)],p),B.aw,B.J,B.O,14,l)
+r=A.by(A.b([r,q,A.dw(A.bk(o,B.aw,l,B.J,B.O,2),1),A.bk(A.b([m.c,B.b5M],p),B.e2,l,B.J,B.O,0)],p),B.aw,B.J,B.O,14,l)
 return new A.b0(B.XB,A.bk(A.b([r,new A.b0(B.Xx,k<640?A.bk(A.b([s.L9(),A.by(A.b([s.Ov(),B.tU,s.Oj(!0)],p),B.a4,B.J,B.O,16,l)],p),B.aW,l,B.J,B.O,10):A.by(A.b([A.dw(s.L9(),1),s.Ov(),s.Oj(!0)],p),B.a4,B.J,B.O,16,l),l)],p),B.aW,l,B.J,B.O,10),l)},
 $S:158}
 A.a8O.prototype={
@@ -59936,12 +59936,12 @@ n=new A.aJ(B.bY,1,B.V,-1)
 m=A.aYI(p,!1)
 l=new A.aK(12,12)
 l=A.cd(k,A.q8(A.aYq(p,!1),A.aYI(p,!1).c,k,22),B.Q,k,k,new A.bH(m.d,k,k,new A.cN(l,l,l,l),k,k,B.as),k,40,k,k,k,k,40)
-i.push(A.cd(k,A.by(A.b([l,new A.f1(1,B.bR,A.bk(A.b([A.a8(p==="Slim laden"?"Auto slim laden":p,k,k,k,B.fB,k,k),B.b6j],j),B.aw,k,B.J,B.O,0),k),A.eA(B.ub,k,k,new A.aB3(this,p),k,k)],j),B.a4,B.J,B.O,12,k),B.Q,k,k,new A.bH(B.I,k,new A.dJ(n,n,n,n),new A.cN(o,o,o,o),k,k,B.as),k,k,k,B.Xz,k,k,k))}return A.bk(i,B.aW,k,B.J,B.O,8)}}
+i.push(A.cd(k,A.by(A.b([l,new A.f1(1,B.bR,A.bk(A.b([A.a8(p==="Slim laden"?"Auto slim laden":p,k,k,k,B.fB,k,k),B.b6h],j),B.aw,k,B.J,B.O,0),k),A.eA(B.ub,k,k,new A.aB3(this,p),k,k)],j),B.a4,B.J,B.O,12,k),B.Q,k,k,new A.bH(B.I,k,new A.dJ(n,n,n,n),new A.cN(o,o,o,o),k,k,B.as),k,k,k,B.Xz,k,k,k))}return A.bk(i,B.aW,k,B.J,B.O,8)}}
 A.aB3.prototype={
 $0(){return this.a.d.$1(this.b)},
 $S:0}
 A.a4X.prototype={
-L(a){var s,r,q,p,o,n,m,l,k,j=null,i=t.p,h=A.b([B.aTI,B.b5M],i)
+L(a){var s,r,q,p,o,n,m,l,k,j=null,i=t.p,h=A.b([B.aTI,B.b5L],i)
 for(s=this.c,r=s.length,q=0;q<s.length;s.length===r||(0,A.n)(s),++q){p=s[q]
 o=new A.aK(20,20)
 n=new A.aJ(B.bY,1,B.V,-1)
@@ -60000,7 +60000,7 @@ s=b.b
 if(s==null)return B.ew
 p=this.a
 r=t.p
-return A.bk(A.b([A.dw(new A.b0(B.kM,A.yO(new A.Io(s,q),new A.bH(q,q,A.l3(B.bY,1),q,q,q,B.as),B.f7),q),1),new A.b0(B.d1,A.eJ(B.oa,A.b([A.kl(B.ZC,B.b5t,new A.aJU(s),q),A.kl(B.ZM,B.b5P,new A.aJV(p,s),q),A.ud(B.ZS,B.b6w,new A.aJW(p,s))],r),B.c3,8,12),q)],r),B.a4,q,B.J,B.O,0)},
+return A.bk(A.b([A.dw(new A.b0(B.kM,A.yO(new A.Io(s,q),new A.bH(q,q,A.l3(B.bY,1),q,q,q,B.as),B.f7),q),1),new A.b0(B.d1,A.eJ(B.oa,A.b([A.kl(B.ZC,B.b5t,new A.aJU(s),q),A.kl(B.ZM,B.b5O,new A.aJV(p,s),q),A.ud(B.ZS,B.b6u,new A.aJW(p,s))],r),B.c3,8,12),q)],r),B.a4,q,B.J,B.O,0)},
 $S:320}
 A.aJU.prototype={
 $0(){var s=v.G,r=s.URL.createObjectURL(new s.Blob(A.b([this.a],t.vs),{type:"application/pdf"}))
@@ -60085,7 +60085,7 @@ case 4:if(p.c!=null)p.Z(new A.aHF(p))
 case 1:return A.r(q,r)}})
 return A.t($async$z7,r)},
 L(a){var s=this,r=null,q=s.a.d,p=q?32:16,o=new A.jA(4,A.ch(40),B.f0),n=q?32:20
-return new A.b0(new A.af(p,n,p,0),A.bk(A.b([new A.Ib("Woningen",A.ud(B.qu,B.b73,s.gauw()),!q,r),A.iX(r,B.br,!1,r,!0,B.ah,r,A.jV(),r,r,r,r,r,r,2,A.GW(r,o,r,r,r,r,r,r,!0,o,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Zoek op naam of adres",r,r,r,r,r,r,r,r,r,!0,!0,!1,r,B.xQ,r,r,r,r,r,r,r,r,r,r,r,r),B.aG,!0,r,!0,r,!1,r,B.bV,r,r,r,r,r,r,r,r,1,r,r,!1,"\u2022",r,new A.aHL(s),r,r,r,!1,r,r,!1,r,!0,r,B.bM,r,r,r,r,r,r,r,r,r,r,r,r,!0,B.b_,r,B.cz,r,r,r,r),A.dw(A.aiK(new A.aHM(s),s.ga_I(),t.dB),1)],t.p),B.aW,r,B.J,B.O,16),r)}}
+return new A.b0(new A.af(p,n,p,0),A.bk(A.b([new A.Ib("Woningen",A.ud(B.qu,B.b72,s.gauw()),!q,r),A.iX(r,B.br,!1,r,!0,B.ah,r,A.jV(),r,r,r,r,r,r,2,A.GW(r,o,r,r,r,r,r,r,!0,o,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"Zoek op naam of adres",r,r,r,r,r,r,r,r,r,!0,!0,!1,r,B.xQ,r,r,r,r,r,r,r,r,r,r,r,r),B.aG,!0,r,!0,r,!1,r,B.bV,r,r,r,r,r,r,r,r,1,r,r,!1,"\u2022",r,new A.aHL(s),r,r,r,!1,r,r,!1,r,!0,r,B.bM,r,r,r,r,r,r,r,r,r,r,r,r,!0,B.b_,r,B.cz,r,r,r,r),A.dw(A.aiK(new A.aHM(s),s.ga_I(),t.dB),1)],t.p),B.aW,r,B.J,B.O,16),r)}}
 A.aHD.prototype={
 $0(){var s=this,r=s.a
 r.e=s.b
@@ -60124,7 +60124,7 @@ o.push(new A.a3A(B.UQ,B.aR,"Pro op het beginscherm",n,"Begrepen",new A.aHI(p),i)
 if(n===0){s=A.b([],q)
 if(r.ga3(h))s.push(new A.Ln(p.a.d?200:150,i))
 s.push(A.a8(r.ga3(h)?'Nog geen woningen. Toevoegen kan met "Nieuwe woning".':"Geen klant gevonden.",i,i,i,B.b3m,B.ek,i))
-if(r.ga3(h))B.n.T(s,A.b([A.kl(B.ZU,B.b6g,p.gaC9(),i),B.b5Y],q))
+if(r.ga3(h))B.n.T(s,A.b([A.kl(B.ZU,B.b6f,p.gaC9(),i),B.b5X],q))
 o.push(new A.b0(B.Xh,A.bk(s,B.a4,i,B.J,B.O,20),i))}else for(k=0;k<s.length;s.length===n||(0,A.n)(s),++k){j=s[k]
 o.push(new A.a4c(j,p.a.e,new A.aHJ(p,j),i))}o.push(new A.a9q(p.e,p.gaA5(),i))
 return A.zM(o,i,i,!1)},
@@ -60240,7 +60240,7 @@ L(a){var s=this,r=null,q=A.ch(20),p=A.l3(s.d,1)
 return A.cd(r,A.bk(A.b([A.a8(s.e,r,r,r,B.fB,r,r),A.a8(s.f,r,r,r,B.Pm,r,r),A.eA(A.a8(s.r,r,r,r,r,r,r),r,r,s.w,r,r)],t.p),B.aw,r,B.J,B.O,6),B.Q,r,r,new A.bH(s.c,r,p,q,r,r,B.as),r,r,r,B.d1,r,r,r)}}
 A.a3y.prototype={
 L(a){var s=null,r=A.ch(20),q=A.l3(B.aR,1),p=t.p
-return A.cd(s,A.bk(A.b([B.b6a,B.b6v,A.eJ(B.bv,A.b([A.hq(B.nX,this.c),A.eA(B.b6e,s,s,this.d,s,s)],p),B.c3,0,8)],p),B.aw,s,B.J,B.O,6),B.Q,s,s,new A.bH(B.cw,s,q,r,s,s,B.as),s,s,s,B.d1,s,s,s)}}
+return A.cd(s,A.bk(A.b([B.b69,B.b6t,A.eJ(B.bv,A.b([A.hq(B.nX,this.c),A.eA(B.b6d,s,s,this.d,s,s)],p),B.c3,0,8)],p),B.aw,s,B.J,B.O,6),B.Q,s,s,new A.bH(B.cw,s,q,r,s,s,B.as),s,s,s,B.d1,s,s,s)}}
 A.qx.prototype={
 ao(){return new A.a4h()}}
 A.a4h.prototype={
@@ -60359,14 +60359,14 @@ case 1:return A.q(p.at(-1),r)}})
 return A.t($async$v2,r)},
 L(a){var s=this,r=null,q=A.b([A.iX(r,B.br,!1,r,!0,B.ah,r,A.jV(),s.d,r,r,r,r,r,2,A.GW(r,r,r,r,r,r,r,r,!0,r,r,r,r,r,s.e,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,"EVPRO-\u2026",r,r,r,r,r,r,r,r,"Licentiecode",!0,!0,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r),B.aG,!0,r,!0,r,!1,r,B.bV,r,r,r,r,r,r,r,r,4,2,r,!1,"\u2022",r,new A.aDm(s),r,r,r,!1,r,r,!1,r,!0,r,B.bM,r,r,r,r,r,r,r,r,r,r,r,r,!0,B.b_,r,B.cz,r,r,r,r)],t.p),p=s.f
 if(p!=null)q.push(A.a8(p,r,r,r,B.u8,r,r))
-q.push(new A.cz(B.c6,r,r,A.hq(B.b6p,s.gaj1()),r))
+q.push(new A.cz(B.c6,r,r,A.hq(B.b6n,s.gaj1()),r))
 return A.bk(q,B.aW,r,B.J,B.O,12)}}
 A.aDi.prototype={
 $0(){var s=this.b
 return this.a.f="Gelukt: de licentie voor "+s.a+" is actief, geldig t/m "+A.na(s.b)+"."},
 $S:0}
 A.aDj.prototype={
-$0(){var s=this.b.c?"Dit is een code voor Pro Gebouwen (VvE's en bedrijfsdaken); die is bewaard. Voor Woningen is daarnaast een basislicentie nodig.":"Dit is een basislicentie (Woningen); die is bewaard. Voor VvE's en bedrijfsdaken is een code voor Pro Gebouwen nodig."
+$0(){var s=this.b.c?"Dit is een code voor Pro Gebouwen (nu VvE's); die is bewaard. Voor Woningen is daarnaast een basislicentie nodig.":"Dit is een basislicentie (Woningen); die is bewaard. Voor VvE's is een code voor Pro Gebouwen nodig."
 return this.a.f=s},
 $S:0}
 A.aDk.prototype={
@@ -60394,7 +60394,7 @@ o=l.c
 n=t.p
 s=A.b([q,A.a8(s?"Bij verlengen v\xf3\xf3r het einde sluit de nieuwe licentie aan op deze. De nieuwe code komt hieronder.":"Licentiecode: hieronder. Vragen: contact@energievriend.nl.",k,k,k,B.bh,k,k),new A.qx(o,s,!1,k),new A.tL(o,l.f,!1,k)],n)
 m=l.e
-if(m!=null){q=A.b([B.pD,B.b5K,A.a8(A.bp0(m),k,k,k,k,k,k)],n)
+if(m!=null){q=A.b([B.pD,B.b73,A.a8(A.bp0(m),k,k,k,k,k,k)],n)
 if(!(m instanceof A.Gk))q.push(new A.qx(o,m instanceof A.q4,!0,k))
 B.n.T(s,q)}return new A.dc("Licentie",s,k)}}
 A.Un.prototype={
@@ -60403,15 +60403,15 @@ A:{if(l){s=m.a
 m=s
 break A}m=n
 break A}r=!l
-if(r)q="VvE's en bedrijfsdaken: Pro Gebouwen"
+if(r)q="Pro Gebouwen: eerst VvE's"
 else q=m==null?"De proef van Pro Gebouwen is afgelopen":"Licentie voor Pro Gebouwen verlopen"
 p=t.p
 q=A.b([A.by(A.b([B.ZK,A.dw(A.a8(q,n,n,n,B.u6,n,n),1)],p),B.a4,B.J,B.O,12,n)],p)
-if(r)B.n.T(q,A.b([B.b6h,B.a0_,A.ud(B.ZH,B.b6V,new A.aiR(o)),B.b5y],p))
+if(r)B.n.T(q,A.b([B.b6S,B.a0_,A.ud(B.ZH,B.b6U,new A.aiR(o)),B.b5y],p))
 else q.push(A.a8(m==null?"De proef van Pro Gebouwen (30 dagen) is voorbij. Verder met een licentiecode. Woningen werkt gewoon door.":"De licentie voor "+m.a+" liep af op "+A.na(m.b)+". Verder met een nieuwe code. Woningen werkt gewoon door.",n,n,n,B.nS,n,n))
 r=o.c
 q.push(new A.dc("Code voor Pro Gebouwen",A.b([new A.tL(r,o.e,!0,n),B.PE,new A.qx(r,m!=null,!0,n)],p),n))
-if(l)q.push(new A.dc("Uw VvE's",A.b([B.b6T,new A.cz(B.c6,n,n,A.kl(B.qt,B.nX,new A.aiS(o,a),n),n)],p),n))
+if(l)q.push(new A.dc("Uw VvE's",A.b([B.b6R,new A.cz(B.c6,n,n,A.kl(B.qt,B.nX,new A.aiS(o,a),n),n)],p),n))
 return A.jI(new A.cz(B.eZ,n,n,new A.du(B.RW,A.bk(q,B.aW,n,B.J,B.O,16),n),n),B.bM,B.aL)}}
 A.aiR.prototype={
 $0(){var s=0,r=A.u(t.H),q=this,p
@@ -60515,7 +60515,7 @@ for(s=this.b,r=s.length,q=0;q<s.length;s.length===r||(0,A.n)(s),++q){p=s[q]
 if(B.q.cs(p,"\u26a0\ufe0f "))l.push(A.a8(p,o,o,o,B.b1W,o,o))
 else if(B.q.cs(p," "))l.push(new A.b0(B.XF,A.a8(B.q.aaS(p),o,o,o,B.Pt,o,o),o))
 else l.push(A.a8(p,o,o,o,B.Pt,o,o))}l=A.dg(A.bk(l,B.aw,o,B.J,B.bs,10),o,480)
-return A.pr(A.b([A.eA(B.b62,o,o,new A.aU4(a),o,o)],m),l,!0,n)},
+return A.pr(A.b([A.eA(B.b61,o,o,new A.aU4(a),o,o)],m),l,!0,n)},
 $S:56}
 A.aU4.prototype={
 $0(){return A.ci(this.a,!1).fN()},
@@ -60529,7 +60529,7 @@ return A.bqQ(this.b,s.e,s.d)},
 $S:0}
 A.VF.prototype={
 L(a){var s=null
-return A.eJ(B.oa,A.b([A.eA(B.b5v,s,s,new A.alm(),s,s),A.eA(B.b6H,s,s,new A.aln(),s,s)],t.p),B.c3,0,0)}}
+return A.eJ(B.oa,A.b([A.eA(B.b5v,s,s,new A.alm(),s,s),A.eA(B.b6F,s,s,new A.aln(),s,s)],t.p),B.c3,0,0)}}
 A.alm.prototype={
 $0(){return v.G.window.open("privacy.html","_blank")},
 $S:0}
@@ -60635,7 +60635,7 @@ r=s==null
 q=r?h:e.ru(s)
 if(q==null||r)return B.a01
 r=t.p
-p=A.b([B.b6o],r)
+p=A.b([B.b6m],r)
 for(o=0;o<3;++o){n=B.mM[o]
 if(e.ru(n)!=null)p.push(A.Sc(h,A.a8(A.abx(n),h,h,h,h,h,h),h,new A.aOz(i,n),n===s,h))}p=A.b([A.eJ(B.bv,p,B.hU,4,8),A.a8(""+q.b+" panelen \xb7 "+A.a9(A.an(q.c/1000,1),g)+" kWp",h,h,h,B.bh,h,h),A.lk(new A.aOA(i,q))],r)
 m=q.ax
@@ -60701,7 +60701,7 @@ o=o>=0?new A.a_(s+o,r.gJ()):A.T(A.bR())
 p.a=null
 p.a=o.a
 n=o.b
-j.push(A.by(A.b([new A.f1(1,B.bR,A.bk(A.b([A.a8(n.a,l,l,l,B.eN,l,l),m.a2s(n.b,new A.aOv(p,m,a))],k),B.aw,l,B.J,B.O,6),l),A.q9(l,l,l,B.l3,l,l,new A.aOw(p,m,a),l,l,l,"Punt verwijderen",l)],k),B.aw,B.J,B.O,0,l))}j.push(A.by(A.b([A.dw(A.iX(l,B.br,!1,l,!0,B.ah,l,A.jV(),m.y,l,l,l,l,l,2,B.a_r,B.aG,!0,l,!0,l,!1,l,B.bV,l,l,l,l,l,l,l,l,1,l,l,!1,"\u2022",l,l,l,new A.aOx(m,a),l,!1,l,l,!1,l,!0,l,B.bM,l,l,l,l,l,l,l,l,l,l,l,l,!0,B.b_,l,B.cz,l,l,l,l),1),A.WL(B.b6y,new A.aOy(m,a),l)],k),B.a4,B.J,B.O,8,l))
+j.push(A.by(A.b([new A.f1(1,B.bR,A.bk(A.b([A.a8(n.a,l,l,l,B.eN,l,l),m.a2s(n.b,new A.aOv(p,m,a))],k),B.aw,l,B.J,B.O,6),l),A.q9(l,l,l,B.l3,l,l,new A.aOw(p,m,a),l,l,l,"Punt verwijderen",l)],k),B.aw,B.J,B.O,0,l))}j.push(A.by(A.b([A.dw(A.iX(l,B.br,!1,l,!0,B.ah,l,A.jV(),m.y,l,l,l,l,l,2,B.a_r,B.aG,!0,l,!0,l,!1,l,B.bV,l,l,l,l,l,l,l,l,1,l,l,!1,"\u2022",l,l,l,new A.aOx(m,a),l,!1,l,l,!1,l,!0,l,B.bM,l,l,l,l,l,l,l,l,l,l,l,l,!0,B.b_,l,B.cz,l,l,l,l),1),A.WL(B.b6w,new A.aOy(m,a),l)],k),B.a4,B.J,B.O,8,l))
 return A.bk(j,B.aw,l,B.J,B.O,8)},
 a4n(a){var s,r=this,q=r.y,p=B.q.eG(q.a.a)
 if(p.length===0)return
@@ -60727,9 +60727,9 @@ p=r?k:f
 if(r)s=k
 r=r?"+ Punt toevoegen":k
 d.push(l.a2G(r,new A.aOu(l),p,"Eigen punten om na te vragen","Eigen punten",s))
-return A.bk(A.b([e,B.b6J,l.axg(d)],c),B.aw,k,B.J,B.O,14)},
-L(a){var s=this,r=null,q=t.p,p=A.acb(A.b([new A.b0(B.pH,A.hq(B.jK,new A.aOZ(s,a)),r)],q),B.dC,B.a7,B.b6G)
-return A.ars(!1,A.AU(p,new A.cz(B.eZ,r,r,new A.du(B.RS,A.zM(A.b([A.a8("Voor "+(s.gdK().b.length===0?"deze VvE":s.gdK().b),r,r,r,B.u6,r,r),B.aZQ,B.b53,B.nM,s.au5(),B.nM,s.akP(),B.fz,B.b6_],q),B.d1,r,!1),r),r),r),new A.aP_(s,a),t.hX)}}
+return A.bk(A.b([e,B.b6H,l.axg(d)],c),B.aw,k,B.J,B.O,14)},
+L(a){var s=this,r=null,q=t.p,p=A.acb(A.b([new A.b0(B.pH,A.hq(B.jK,new A.aOZ(s,a)),r)],q),B.dC,B.a7,B.b6E)
+return A.ars(!1,A.AU(p,new A.cz(B.eZ,r,r,new A.du(B.RS,A.zM(A.b([A.a8("Voor "+(s.gdK().b.length===0?"deze VvE":s.gdK().b),r,r,r,B.u6,r,r),B.aZQ,B.b53,B.nM,s.au5(),B.nM,s.akP(),B.fz,B.b5Z],q),B.d1,r,!1),r),r),r),new A.aP_(s,a),t.hX)}}
 A.aOD.prototype={
 $0(){return this.a.r=null},
 $S:0}
@@ -61038,7 +61038,7 @@ r=h}if(h>q){f.b=h
 q=h}}f.a=r-0.08
 f.b=q+0.08
 s=A.b([A.lk(new A.aPn(g,new A.aPq(f),j,e))],t.p)
-if(e.length===0)s.push(B.b6S)
+if(e.length===0)s.push(B.b6Q)
 return new A.dc("Prijs per Wp naast de richtprijzen",s,null)},
 att(a1,a2){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=a2.a,g=j.r.h(0,h),f=B.rp[B.i.aE(a1,5)],e=a2.d,d=e>0?e:j.geD().x,c=j.gazA()===h&&j.geD().CW.length>1,b=new A.aPD(),a=A.ch(20),a0=c?B.aR:B.bY
 a0=A.l3(a0,c?2:1)
@@ -61054,7 +61054,7 @@ n=A.dg(new A.q6("Wp per paneel",e,new A.aPA(j,a2),"leeg = "+d,new A.d0(h+"-wp",s
 p=p?"Prijs, alle samen (\u20ac)":"Prijs (\u20ac)"
 m=a2.e
 q.push(A.eJ(B.bv,A.b([o,n,A.dg(new A.q6(p,m,new A.aPB(j,a2),i,new A.d0(h+"-prijs",s)),i,170)],r),B.c3,8,12))
-if(!a2.gr3())q.push(B.b6x)
+if(!a2.gr3())q.push(B.b6v)
 else if(g==null)q.push(B.b58)
 else{h=g.c
 h=A.b([b.$2("Vermogen",A.a9(B.i.j(B.m.aB(h)),1e4)+" Wp ("+g.b+" panelen)"),b.$2("Prijs per Wp","\u20ac "+A.a9(A.an(m/h,2),1000)),b.$3$vet("Opbrengst per jaar, na onderhoud en verzekering","\u20ac "+A.a9(A.an(g.f,0),1000),!0)],t.nk)
@@ -61062,7 +61062,7 @@ s=g.x
 if(s>0)h.push(b.$2("Waarvan zwaardere aansluiting","- "+("\u20ac "+A.a9(A.an(s,0),1000))))
 h.push(b.$2("Terugverdiend in",A.QS(g)))
 q.push(A.aWS(h,B.Jb,B.qm,B.tV))}q.push(B.pD)
-q.push(B.b63)
+q.push(B.b62)
 h=A.b([],r)
 for(s=A.b80(),r=s.length,p=a2.r,l=0;l<s.length;s.length===r||(0,A.n)(s),++l){k=s[l]
 o=k.r
@@ -61160,10 +61160,10 @@ for(r=a1.length,q=0;q<a1.length;a1.length===r||(0,A.n)(a1),++q){a9=a1[q]
 j=a9.r
 j.toString
 j=A.b([n.$1(A.a8(j,b2,b2,b2,B.dq,b2,b2))],s)
-for(i=b5.length,h=a9.a,b0=0;b0<b5.length;b5.length===i||(0,A.n)(b5),++b0)j.push(n.$1(b5[b0].r.n(0,h)?B.b6r:B.b69))
+for(i=b5.length,h=a9.a,b0=0;b0<b5.length;b5.length===i||(0,A.n)(b5),++b0)j.push(n.$1(b5[b0].r.n(0,h)?B.b6p:B.b68))
 j.push(n.$1(B.aZ))
 b6.push(new A.fv(b2,j))}s=A.b([n.$1(B.aZ)],s)
-for(r=b5.length,q=0;q<b5.length;b5.length===r||(0,A.n)(b5),++q)s.push(n.$1(new A.cz(B.c6,b2,b2,A.eA(B.b5Q,b2,b2,new A.aPP(b1,b5[q]),b2,b2),b2)))
+for(r=b5.length,q=0;q<b5.length;b5.length===r||(0,A.n)(b5),++q)s.push(n.$1(new A.cz(B.c6,b2,b2,A.eA(B.b5P,b2,b2,new A.aPP(b1,b5[q]),b2,b2),b2)))
 s.push(n.$1(B.aZ))
 b6.push(new A.fv(b2,s))
 return A.y3(A.lk(new A.aPQ(b5,b6)),B.cl,B.aB,b2)},
@@ -61173,7 +61173,7 @@ if(o!=null)m.push(o)}if(m.length===0)return B.aZ
 if(!B.n.dG(m,new A.aPE()))return B.aZ
 s=A.ch(20)
 return A.cd(n,A.bk(A.b([B.b54,A.a8(m.length===1?"Bij deze offerte duurt terugverdienen langer dan de panelen meegaan (ca. 25 jaar).":"Bij alle offertes duurt terugverdienen langer dan de panelen meegaan (ca. 25 jaar).",n,n,n,B.Pv,n,n),B.b5r],t.p),B.aw,n,B.J,B.O,6),B.Q,n,n,new A.bH(B.pb,n,n,s,n,n,B.as),n,n,n,B.d1,n,n,n)},
-L(a){var s=this,r=null,q=t.p,p=A.acb(A.b([new A.hv(!1,"Zo wordt met een offerte gerekend",A.b([u.l,u.a,u.h],t.s),r),new A.b0(B.pH,A.hq(B.jK,new A.aQ0(s,a)),r)],q),B.dC,B.a7,B.b6z),o=A.b([A.by(A.b([B.Yc,A.ud(B.qu,B.b5j,s.gaC8())],q),B.a4,B.J,B.O,0,r),B.fz,A.cd(r,B.b61,B.Q,r,r,new A.bH(B.I,r,A.l3(B.bY,1),A.ch(16),r,r,B.as),r,r,r,B.x0,r,r,r),B.nM],q)
+L(a){var s=this,r=null,q=t.p,p=A.acb(A.b([new A.hv(!1,"Zo wordt met een offerte gerekend",A.b([u.l,u.a,u.h],t.s),r),new A.b0(B.pH,A.hq(B.jK,new A.aQ0(s,a)),r)],q),B.dC,B.a7,B.b6x),o=A.b([A.by(A.b([B.Yc,A.ud(B.qu,B.b5j,s.gaC8())],q),B.a4,B.J,B.O,0,r),B.fz,A.cd(r,B.b60,B.Q,r,r,new A.bH(B.I,r,A.l3(B.bY,1),A.ch(16),r,r,B.as),r,r,r,B.x0,r,r,r),B.nM],q)
 if(s.geD().CW.length===0)o.push(B.a00)
 else o.push(s.aA0())
 o.push(B.fz)
@@ -61214,7 +61214,7 @@ $S:0}
 A.aPX.prototype={
 $1(a){var s=null,r=this.a.b
 r=A.a8(r.length===0?"Deze offerte":r,s,s,s,s,s,s)
-return A.pr(A.b([A.eA(B.hP,s,s,new A.aPV(a),s,s),A.hq(B.nY,new A.aPW(a))],t.p),r,!1,B.b6s)},
+return A.pr(A.b([A.eA(B.hP,s,s,new A.aPV(a),s,s),A.hq(B.nY,new A.aPW(a))],t.p),r,!1,B.b6q)},
 $S:56}
 A.aPV.prototype={
 $0(){A.ci(this.a,!1).dZ(!1)
@@ -61429,10 +61429,10 @@ return A.t($async$w2,r)},
 L(a){var s,r,q,p,o,n,m=this,l=null,k=m.d,j=m.a.d,i=j?32:16
 j=j?32:16
 s=t.p
-r=A.b([A.by(A.b([B.Yf,A.ud(B.qu,B.b68,m.gaCd())],s),B.a4,B.J,B.O,0,l),B.fz],s)
+r=A.b([A.by(A.b([B.Yf,A.ud(B.qu,B.b67,m.gaCd())],s),B.a4,B.J,B.O,0,l),B.fz],s)
 if(k==null)r.push(B.ew)
 else{q=J.aM(k)
-if(q.ga3(k))r.push(new A.b0(B.Xj,A.bk(A.b([B.b6X,A.kl(B.ZB,B.b79,m.gaCf(),l),B.b5x],s),B.a4,l,B.J,B.O,16),l))
+if(q.ga3(k))r.push(new A.b0(B.Xj,A.bk(A.b([B.b6W,A.kl(B.ZB,B.b79,m.gaCf(),l),B.b5x],s),B.a4,l,B.J,B.O,16),l))
 else{p=A.b([A.Sc(l,A.a8("Alle ("+q.gq(k)+")",l,l,l,l,l,l),l,new A.aQm(m),m.e==null,l)],s)
 for(o=0;o<5;++o){n=B.qV[o]
 p.push(A.Sc(A.cd(l,l,B.Q,l,l,new A.bH(A.aRl(n),l,l,l,l,l,B.du),l,10,l,l,l,l,10),A.a8(n.d+" ("+q.n5(k,new A.aQn(n)).gq(0)+")",l,l,l,l,l,l),l,new A.aQo(m,n),m.e===n,l))}s=A.b([A.eJ(B.bv,p,B.c3,8,8),B.fz],s)
@@ -61623,7 +61623,7 @@ return A.j(q.tj(p,!0),$async$zi)
 case 5:case 4:return A.r(null,r)}})
 return A.t($async$zi,r)},
 auz(){var s,r,q,p,o,n,m=this,l=null,k=m.gavu(),j=A.ch(20),i=A.b([],t.p)
-if(m.gb7().CW.length===0)i.push(B.b6k)
+if(m.gb7().CW.length===0)i.push(B.b6i)
 else for(s=m.gb7().CW,r=s.length,q=0;q<s.length;s.length===r||(0,A.n)(s),++q){p=s[q]
 o=p.b
 if(o.length===0)o="Offerte"
@@ -61657,7 +61657,7 @@ if(k!=null){q=g.gb7()
 o=k.a
 n=A.a9(A.an(o,0),1000)
 m=k.b
-B.n.T(p,A.b([B.tS,new A.dc("De panelen die er al liggen, na 2027",A.b([A.a8(""+q.cx+u.w+("\u20ac "+n)+" per jaar op. Vanaf 2027, zonder saldering, ca. "+("\u20ac "+A.a9(A.an(m,0),1000))+" per jaar: ca. "+("\u20ac "+A.a9(A.an(o-m,0),1000))+" minder.",f,f,f,B.eN,f,f),B.b6A],l),f)],l))}p.push(B.tS)
+B.n.T(p,A.b([B.tS,new A.dc("De panelen die er al liggen, na 2027",A.b([A.a8(""+q.cx+u.w+("\u20ac "+n)+" per jaar op. Vanaf 2027, zonder saldering, ca. "+("\u20ac "+A.a9(A.an(m,0),1000))+" per jaar: ca. "+("\u20ac "+A.a9(A.an(o-m,0),1000))+" minder.",f,f,f,B.eN,f,f),B.b6y],l),f)],l))}p.push(B.tS)
 p.push(g.aC0(b))
 p.push(B.tS)
 q=A.ch(20)
@@ -61673,7 +61673,7 @@ m=j.a
 i=j.b
 h=A.a8(""+m+" van "+i+" afgehandeld",f,f,f,B.eN,f,f)
 m=i===0?0:m/i
-p.push(A.eJ(B.bv,A.b([q,A.dg(A.hw(!1,n,!0,new A.dc("Aandachtspunten",A.b([h,A.am2(B.cw,A.ch(999),f,8,m),B.b71,new A.cz(B.c6,f,f,A.a_g(B.ZO,B.b6l,o),f)],l),f),f,!0,f,f,f,f,f,f,f,f,o,f,f,f,f,f,f,f),f,b),A.dg(g.auz(),f,b)],l),B.c3,12,12))
+p.push(A.eJ(B.bv,A.b([q,A.dg(A.hw(!1,n,!0,new A.dc("Aandachtspunten",A.b([h,A.am2(B.cw,A.ch(999),f,8,m),B.b70,new A.cz(B.c6,f,f,A.a_g(B.ZO,B.b6j,o),f)],l),f),f,!0,f,f,f,f,f,f,f,f,o,f,f,f,f,f,f,f),f,b),A.dg(g.auz(),f,b)],l),B.c3,12,12))
 p.push(B.fz)
 p.push(new A.dc("Volgende stap",A.b([A.iX(f,B.br,!1,f,!0,B.ah,f,A.jV(),g.ga4o(),f,f,f,f,f,2,B.a_h,B.aG,!0,f,!0,f,!1,f,B.bV,f,f,f,f,f,f,f,f,1,f,f,!1,"\u2022",f,new A.aQ5(g),f,f,f,!1,f,f,!1,f,!0,f,B.bM,f,f,f,f,f,f,f,f,f,f,f,f,!0,B.b_,f,B.cz,f,f,f,f),B.b5H],l),f))
 return A.zM(p,new A.af(a,r,a,24),f,!1)}}
@@ -61753,7 +61753,7 @@ q=A.ch(20)
 p=h.x
 o=p?B.aR:B.bY
 o=A.l3(o,p?2:1)
-n=A.dg(p?A.cd(g,B.b6i,B.Q,g,g,new A.bH(B.cw,g,g,A.ch(999),g,g,B.as),g,g,g,B.pI,g,g,g):A.eA(B.b6N,g,g,h.y,g,A.a_h(g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,B.aB,g,g,g,g,g,g,g,g)),28,g)
+n=A.dg(p?A.cd(g,B.b6g,B.Q,g,g,new A.bH(B.cw,g,g,A.ch(999),g,g,B.as),g,g,g,B.pI,g,g,g):A.eA(B.b6L,g,g,h.y,g,A.a_h(g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,B.aB,g,g,g,g,g,g,g,g)),28,g)
 m=h.f
 l=t.p
 k=A.by(A.b([A.dw(A.a8(A.abx(m),g,g,g,B.nV,g,g),1),new A.hv(!0,"Zo is de aanschaf gerekend",A.b7Z(e,h.d),g)],l),B.a4,B.J,B.O,0,g)
@@ -61765,8 +61765,8 @@ i.push(r.$3$vet("Opbrengst per jaar","\u20ac "+A.a9(A.an(e.f,0),f),!0))
 i.push(r.$2("Terugverdiend in",A.QS(e)))
 i.push(r.$2("Zelf gebruikt","ca. "+B.m.aB(e.as*100)+"%"))
 r=A.b([n,k,j,A.aWS(i,B.Jb,B.qm,B.tV)],l)
-if(e.at&&h.e.length===0)r.push(B.b72)
-if(e.gaaE())r.push(B.b6P)
+if(e.at&&h.e.length===0)r.push(B.b71)
+if(e.gaaE())r.push(B.b6N)
 r.push(B.pD)
 p=A.a9(A.an(s.a,0),f)
 n=A.a9(A.an(s.b,0),f)
@@ -61847,7 +61847,7 @@ return A.t($async$zQ,r)},
 vp(a,b,c,d){return new A.q6(a,b,new A.aP1(this,c),d,new A.d0(a+this.as,t.kK))},
 MJ(a,b,c){return this.vp(a,b,c,null)},
 L(a){var s,r,q=this,p=null,o="\u2022",n=t.p,m=A.acb(A.b([new A.b0(B.pH,A.hq(B.jK,new A.aPb(q,a)),p)],n),B.dC,B.a7,B.b5q),l=A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.gNv(),p,p,p,p,p,2,B.a_g,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,1,p,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p),k=A.dg(A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.x,p,p,p,p,p,2,B.a_n,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,1,p,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p),p,140),j=A.dg(A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.y,p,p,p,p,p,2,B.a_k,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,1,p,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p),p,150)
-l=A.b([l,A.eJ(B.bv,A.b([k,j,A.kl(B.xQ,B.b6q,q.Q?p:q.gaCx(),p)],n),B.uH,8,12)],n)
+l=A.b([l,A.eJ(B.bv,A.b([k,j,A.kl(B.xQ,B.b6o,q.Q?p:q.gaCx(),p)],n),B.uH,8,12)],n)
 s=q.z
 if(s!=null)l.push(A.a8(s,p,p,p,B.bh,p,p))
 l.push(A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.gFG(),p,p,p,p,p,2,B.y1,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,1,p,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p))
@@ -61857,7 +61857,7 @@ l.push(B.b52)
 k=A.b([q.MJ("Aantal (extra) panelen dat op het dak past",q.gb7().w,new A.aPf(q)),q.vp("Panelen die er al liggen (algemene meter)",q.gb7().cx,new A.aPg(q),"Nieuwe panelen komen hier bovenop; vul hierboven de ruimte in die nog over is"),q.vp("Vermogen per paneel (Wp)",q.gb7().x,new A.aPh(q),"Milieu Centraal rekent met 435 Wp per paneel"),new A.kb("Dakrichting",q.gb7().y,B.Je,new A.aPi(q),p)],n)
 j=q.vp("Jaarverbruik (kWh)",q.gb7().f,new A.aPj(q),"Van de jaarafrekening van de VvE")
 r=q.gb7().r?"klein":"groot"
-return A.ars(!1,A.AU(m,new A.cz(B.eZ,p,p,new A.du(B.RX,A.zM(A.b([new A.dc("Gebouw",l,p),new A.dc("Dak",k,p),new A.dc("Algemene meter",A.b([j,new A.kb("Aansluiting",r,B.aRQ,new A.aPk(q),p),q.vp("Stroomprijs per kWh (\u20ac, optioneel)",q.gb7().Q,new A.aPl(q),"Leeg = een gemiddelde prijs")],n),p),new A.dc("Appartementen",A.b([q.vp("Jaarverbruik per appartement (kWh, optioneel)",q.gb7().z,new A.aPm(q),"Leeg = een gemiddeld huishouden"),A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.gLa(),p,p,p,p,p,2,B.a_u,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,12,3,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p)],n),p),new A.dc("Notitie",A.b([A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.gNC(),p,p,p,p,p,2,B.a_l,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,6,2,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p)],n),p),new A.cz(B.c6,p,p,A.a_g(B.l3,B.b6D,q.gaCe()),p)],n),B.d1,p,!1),p),p),p),new A.aPe(q,a),t.hX)}}
+return A.ars(!1,A.AU(m,new A.cz(B.eZ,p,p,new A.du(B.RX,A.zM(A.b([new A.dc("Gebouw",l,p),new A.dc("Dak",k,p),new A.dc("Algemene meter",A.b([j,new A.kb("Aansluiting",r,B.aRQ,new A.aPk(q),p),q.vp("Stroomprijs per kWh (\u20ac, optioneel)",q.gb7().Q,new A.aPl(q),"Leeg = een gemiddelde prijs")],n),p),new A.dc("Appartementen",A.b([q.vp("Jaarverbruik per appartement (kWh, optioneel)",q.gb7().z,new A.aPm(q),"Leeg = een gemiddeld huishouden"),A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.gLa(),p,p,p,p,p,2,B.a_u,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,12,3,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p)],n),p),new A.dc("Notitie",A.b([A.iX(p,B.br,!1,p,!0,B.ah,p,A.jV(),q.gNC(),p,p,p,p,p,2,B.a_l,B.aG,!0,p,!0,p,!1,p,B.bV,p,p,p,p,p,p,p,p,6,2,p,!1,o,p,p,p,p,p,!1,p,p,!1,p,!0,p,B.bM,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.b_,p,B.cz,p,p,p,p)],n),p),new A.cz(B.c6,p,p,A.a_g(B.l3,B.b6B,q.gaCe()),p)],n),B.d1,p,!1),p),p),p),new A.aPe(q,a),t.hX)}}
 A.aP5.prototype={
 $0(){var s=this.a
 s.Q=!0
@@ -133377,21 +133377,21 @@ B.Pu=new A.A(!0,B.wb,null,null,null,null,17,B.at,null,null,null,null,null,null,n
 B.b55=new A.a3(u.R,null,B.Pu,null,null,null,null,null,null)
 B.Ya=new A.f1(1,B.bR,B.b55,null)
 B.ua=new A.A(!0,null,null,null,null,null,22,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6C=new A.a3("Prijs per Wp",null,B.ua,null,null,null,null,null,null)
-B.Yb=new A.f1(1,B.bR,B.b6C,null)
+B.b6A=new A.a3("Prijs per Wp",null,B.ua,null,null,null,null,null,null)
+B.Yb=new A.f1(1,B.bR,B.b6A,null)
 B.u6=new A.A(!0,null,null,null,null,null,26,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6f=new A.a3("Offertes vergelijken",null,B.u6,null,null,null,null,null,null)
-B.Yc=new A.f1(1,B.bR,B.b6f,null)
+B.b6e=new A.a3("Offertes vergelijken",null,B.u6,null,null,null,null,null,null)
+B.Yc=new A.f1(1,B.bR,B.b6e,null)
 B.b5h=new A.a3("Er is een nieuwe versie van Pro. Alle gegevens blijven staan.",null,null,null,null,null,null,null,null)
 B.Yd=new A.f1(1,B.bR,B.b5h,null)
 B.nT=new A.A(!0,null,null,null,null,null,30,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6W=new A.a3("VvE's",null,B.nT,null,null,null,null,null,null)
-B.Yf=new A.f1(1,B.bR,B.b6W,null)
-B.b5V=new A.a3("Wat loont, in deze volgorde",null,B.ua,null,null,null,null,null,null)
-B.Yg=new A.f1(1,B.bR,B.b5V,null)
+B.b6V=new A.a3("VvE's",null,B.nT,null,null,null,null,null,null)
+B.Yf=new A.f1(1,B.bR,B.b6V,null)
+B.b5U=new A.a3("Wat loont, in deze volgorde",null,B.ua,null,null,null,null,null,null)
+B.Yg=new A.f1(1,B.bR,B.b5U,null)
 B.b3h=new A.A(!0,null,null,null,null,null,21,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b70=new A.a3("Nog na te vragen",null,B.b3h,null,null,null,null,null,null)
-B.Yh=new A.f1(1,B.bR,B.b70,null)
+B.b7_=new A.a3("Nog na te vragen",null,B.b3h,null,null,null,null,null,null)
+B.Yh=new A.f1(1,B.bR,B.b7_,null)
 B.b5a=new A.a3("Varianten naast elkaar",null,B.ua,null,null,null,null,null,null)
 B.Yi=new A.f1(1,B.bR,B.b5a,null)
 B.Yj=new A.z4(null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -133681,25 +133681,25 @@ B.y9=new A.alg(null)
 B.a_Y=new A.alk(null)
 B.qw=new A.VF(null)
 B.jJ=new A.A(!0,B.b4,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6E=new A.a3(u.A,null,B.jJ,null,null,null,null,null,null)
-B.aOz=s([B.b6E],t.p)
+B.b6C=new A.a3(u.A,null,B.jJ,null,null,null,null,null,null)
+B.aOz=s([B.b6C],t.p)
 B.a_Z=new A.dc("Al meegerekend",B.aOz,null)
-B.b5X=new A.a3("\u2022 Varianten naast elkaar: op de algemene meter of per appartement, passend of het dak vol",null,null,null,null,null,null,null,null)
-B.b6d=new A.a3("\u2022 Wat het kost en oplevert per appartement, ook met breukdelen",null,null,null,null,null,null,null,null)
-B.b6O=new A.a3("\u2022 Aandachtspunten v\xf3\xf3r de offerte: dak, verzekering, aansluiting, besluit",null,null,null,null,null,null,null,null)
-B.b6R=new A.a3("\u2022 Offertes naast elkaar toetsen",null,null,null,null,null,null,null,null)
-B.b65=new A.a3("\u2022 Een ALV-rapport met een blad per appartement",null,null,null,null,null,null,null,null)
-B.aC_=s([B.b5X,B.b6d,B.b6O,B.b6R,B.b65],t.p)
+B.b5W=new A.a3("\u2022 Varianten naast elkaar: op de algemene meter of per appartement, passend of het dak vol",null,null,null,null,null,null,null,null)
+B.b6c=new A.a3("\u2022 Wat het kost en oplevert per appartement, ook met breukdelen",null,null,null,null,null,null,null,null)
+B.b6M=new A.a3("\u2022 Aandachtspunten v\xf3\xf3r de offerte: dak, verzekering, aansluiting, besluit",null,null,null,null,null,null,null,null)
+B.b6P=new A.a3("\u2022 Offertes naast elkaar toetsen",null,null,null,null,null,null,null,null)
+B.b64=new A.a3("\u2022 Een ALV-rapport met een blad per appartement",null,null,null,null,null,null,null,null)
+B.aC_=s([B.b5W,B.b6c,B.b6M,B.b6P,B.b64],t.p)
 B.a0_=new A.dc("Wat het doet",B.aC_,null)
 B.eN=new A.A(!0,null,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.b5s=new A.a3("Voeg de offerte van een installateur toe. Pro zet de prijs per Wp naast de richtprijzen en rekent uit wat het oplevert.",null,B.eN,null,null,null,null,null,null)
 B.aNa=s([B.b5s],t.p)
 B.a00=new A.dc("Nog geen offerte",B.aNa,null)
-B.b5T=new A.a3("Er is nog geen variant om te tonen.",null,null,null,null,null,null,null,null)
-B.aL1=s([B.b5T],t.p)
+B.b5S=new A.a3("Er is nog geen variant om te tonen.",null,null,null,null,null,null,null,null)
+B.aL1=s([B.b5S],t.p)
 B.a01=new A.dc("Al meegerekend",B.aL1,null)
-B.b6t=new A.a3(u.u,null,null,null,null,null,null,null,null)
-B.aNp=s([B.b6t],t.p)
+B.b6r=new A.a3(u.u,null,null,null,null,null,null,null,null)
+B.aNp=s([B.b6r],t.p)
 B.a02=new A.dc("Geen stap die loont",B.aNp,null)
 B.a03=new A.VG(0,"rawKeyData")
 B.a04=new A.VG(1,"keyDataThenRawKeyData")
@@ -139144,8 +139144,8 @@ B.x_=new A.af(0,6,0,0)
 B.fB=new A.A(!0,null,null,null,null,null,17,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.b57=new A.a3("Al gedaan",null,B.fB,null,null,null,null,null,null)
 B.aTH=new A.b0(B.x_,B.b57,null)
-B.b64=new A.a3("Niet meegenomen",null,B.fB,null,null,null,null,null,null)
-B.aTI=new A.b0(B.x_,B.b64,null)
+B.b63=new A.a3("Niet meegenomen",null,B.fB,null,null,null,null,null,null)
+B.aTI=new A.b0(B.x_,B.b63,null)
 B.JK=new A.I9(0,"natural")
 B.aTJ=new A.I9(1,"landscape")
 B.aTK=new A.I9(2,"portrait")
@@ -139231,8 +139231,8 @@ B.aWt=new A.Aw(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.fC=new A.A(!0,B.b4,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.b5d=new A.a3("duurder",null,B.fC,null,null,null,null,null,null)
 B.aWu=new A.ok(null,null,0,0,null,null,B.b5d,null)
-B.b6M=new A.a3("goedkoper",null,B.fC,null,null,null,null,null,null)
-B.aWv=new A.ok(0,null,null,0,null,null,B.b6M,null)
+B.b6K=new A.a3("goedkoper",null,B.fC,null,null,null,null,null,null)
+B.aWv=new A.ok(0,null,null,0,null,null,B.b6K,null)
 B.aWC=new A.AC(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.aWH=new A.IN(null,null,null,null,null,null,null,null,null)
 B.NJ=new A.aK(1,1)
@@ -139524,8 +139524,8 @@ B.aZL=new A.I(77.37,37.9)
 B.aZ=new A.eT(0,0,null,null)
 B.aZN=new A.eT(10,null,null,null)
 B.OJ=new A.eT(1/0,1/0,null,null)
-B.b7_=new A.a3("Het bestand kan dan door iedereen worden gelezen die het vindt, bijvoorbeeld in cloudopslag.",null,null,null,null,null,null,null,null)
-B.aZO=new A.eT(420,null,B.b7_,null)
+B.b6Z=new A.a3("Het bestand kan dan door iedereen worden gelezen die het vindt, bijvoorbeeld in cloudopslag.",null,null,null,null,null,null,null,null)
+B.aZO=new A.eT(420,null,B.b6Z,null)
 B.fz=new A.eT(null,12,null,null)
 B.nM=new A.eT(null,16,null,null)
 B.aZP=new A.eT(null,20,null,null)
@@ -139547,12 +139547,12 @@ B.aZW=new A.mP(3,"hide")
 B.bcI=new A.mP(4,"remove")
 B.aZX=new A.mP(5,"timeout")
 B.aZY=new A.Bg(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6K=new A.a3("Delen kan hier niet; het rapport is gedownload.",null,null,null,null,null,null,null,null)
-B.aZZ=new A.oG(B.b6K,null,null,null,null,null,null,null,null,null,null,null,null,B.e7,!1,null,null,null,B.ah,null)
-B.b5U=new A.a3("Dit logo is groter dan 1 MB; het maximum is 1 MB.",null,null,null,null,null,null,null,null)
-B.b__=new A.oG(B.b5U,null,null,null,null,null,null,null,null,null,null,null,null,B.e7,!1,null,null,null,B.ah,null)
-B.b6Q=new A.a3("Bedrijven komt later; dat onderdeel is nog niet klaar.",null,null,null,null,null,null,null,null)
-B.b_0=new A.oG(B.b6Q,null,null,null,null,null,null,null,null,null,null,null,null,B.e7,!1,null,null,null,B.ah,null)
+B.b6I=new A.a3("Delen kan hier niet; het rapport is gedownload.",null,null,null,null,null,null,null,null)
+B.aZZ=new A.oG(B.b6I,null,null,null,null,null,null,null,null,null,null,null,null,B.e7,!1,null,null,null,B.ah,null)
+B.b5T=new A.a3("Dit logo is groter dan 1 MB; het maximum is 1 MB.",null,null,null,null,null,null,null,null)
+B.b__=new A.oG(B.b5T,null,null,null,null,null,null,null,null,null,null,null,null,B.e7,!1,null,null,null,B.ah,null)
+B.b6O=new A.a3("Bedrijven komt later; dat onderdeel is nog niet klaar.",null,null,null,null,null,null,null,null)
+B.b_0=new A.oG(B.b6O,null,null,null,null,null,null,null,null,null,null,null,null,B.e7,!1,null,null,null,B.ah,null)
 B.OQ=new A.Kd(0,"permissive")
 B.b_1=new A.Kd(1,"normal")
 B.b_2=new A.Kd(2,"forced")
@@ -140045,91 +140045,91 @@ B.b5G=new A.a3("EnergieVriend Pro rekent uit wat maatregelen voor een woning of 
 B.b5H=new A.a3("Afspraken en herinneringen staan niet in Pro.",null,B.cL,null,null,null,null,null,null)
 B.b5I=new A.a3("per jaar",null,B.bh,null,null,null,null,null,null)
 B.b5J=new A.a3("Die blijven bewaard in deze browser. Een versleutelde back-up maken kan nu al.",null,B.bh,null,null,null,null,null,null)
-B.b5K=new A.a3("Pro Gebouwen (VvE's en bedrijfsdaken)",null,B.dU,null,null,null,null,null,null)
 B.b3M=new A.A(!0,null,null,null,null,null,16,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b5L=new A.a3("Isolatie die al is gedaan",null,B.b3M,null,null,null,null,null,null)
-B.b5M=new A.a3("De stappen erboven zijn opnieuw gerekend, zonder deze.",null,B.dq,null,null,null,null,null,null)
-B.b5N=new A.a3("per jaar",null,B.cL,null,null,null,null,null,null)
-B.b5O=new A.a3("Gelden voor alle klanten, inclusief installatie en v\xf3\xf3r subsidie. Leeg is de richtprijs (grijs). Per klant is een eigen bedrag mogelijk.",null,B.bh,null,null,null,null,null,null)
-B.b5P=new A.a3("Delen",null,null,null,null,null,null,null,null)
-B.b5Q=new A.a3("Bewerken",null,null,null,null,null,null,null,null)
-B.b5R=new A.a3("Meenemen",null,B.dq,null,null,null,null,null,null)
-B.b5S=new A.a3("Alle klanten en bedrijfsgegevens in deze browser worden vervangen door die uit de back-up.",null,null,null,null,null,null,null,null)
-B.b5W=new A.a3("Verder",null,null,null,null,null,null,null,null)
+B.b5K=new A.a3("Isolatie die al is gedaan",null,B.b3M,null,null,null,null,null,null)
+B.b5L=new A.a3("De stappen erboven zijn opnieuw gerekend, zonder deze.",null,B.dq,null,null,null,null,null,null)
+B.b5M=new A.a3("per jaar",null,B.cL,null,null,null,null,null,null)
+B.b5N=new A.a3("Gelden voor alle klanten, inclusief installatie en v\xf3\xf3r subsidie. Leeg is de richtprijs (grijs). Per klant is een eigen bedrag mogelijk.",null,B.bh,null,null,null,null,null,null)
+B.b5O=new A.a3("Delen",null,null,null,null,null,null,null,null)
+B.b5P=new A.a3("Bewerken",null,null,null,null,null,null,null,null)
+B.b5Q=new A.a3("Meenemen",null,B.dq,null,null,null,null,null,null)
+B.b5R=new A.a3("Alle klanten en bedrijfsgegevens in deze browser worden vervangen door die uit de back-up.",null,null,null,null,null,null,null,null)
+B.b5V=new A.a3("Verder",null,null,null,null,null,null,null,null)
 B.PB=new A.a3("Zonder wachtwoord opslaan",null,null,null,null,null,null,null,null)
 B.ub=new A.a3("Terugzetten",null,null,null,null,null,null,null,null)
-B.b5Y=new A.a3("Een verzonnen woning met gegevens ingevuld: het plan, de stappen en het rapport.",null,B.cL,B.ek,null,null,null,null,null)
+B.b5X=new A.a3("Een verzonnen woning met gegevens ingevuld: het plan, de stappen en het rapport.",null,B.cL,B.ek,null,null,null,null,null)
 B.b40=new A.A(!0,B.ii,null,null,null,null,12,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b5Z=new A.a3("proef",null,B.b40,null,null,null,null,null,null)
-B.b6_=new A.a3('In het ALV-rapport komt een blok "Nog open v\xf3\xf3r het besluit" met de punten die nog open staan.',null,B.cL,null,null,null,null,null,null)
-B.b60=new A.a3("Opslaan zonder wachtwoord",null,null,null,null,null,null,null,null)
+B.b5Y=new A.a3("proef",null,B.b40,null,null,null,null,null,null)
+B.b5Z=new A.a3('In het ALV-rapport komt een blok "Nog open v\xf3\xf3r het besluit" met de punten die nog open staan.',null,B.cL,null,null,null,null,null,null)
+B.b6_=new A.a3("Opslaan zonder wachtwoord",null,null,null,null,null,null,null,null)
 B.b0b=new A.dr("Wat hier wordt vergeleken: ",null,null,B.aU,null,null,null,null,null,null,B.dU)
 B.b0d=new A.dr("de offertes onderling (wat kost een Wp, wat houdt de VvE per jaar over, wanneer is het terug) \xe9n elke offerte tegen de richtprijzen: ligt de prijs bij een groot dak, of eerder bij een woningprijs? Het beste per regel is groen. De opbrengst is per uur gerekend met het weer en het verbruik van de algemene meter.",null,null,B.aU,null,null,null,null,null,null,null)
 B.aJP=s([B.b0b,B.b0d],t.VO)
 B.b0c=new A.dr(null,B.aJP,null,B.aU,null,null,null,null,null,null,null)
 B.b3P=new A.A(!0,B.b4,null,null,null,null,15,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b61=new A.a3(null,B.b0c,B.b3P,null,null,null,null,null,null)
-B.b62=new A.a3("Ok\xe9",null,null,null,null,null,null,null,null)
-B.b63=new A.a3("Staat in de offerte",null,B.dU,null,null,null,null,null,null)
-B.b66=new A.a3("Vooraf",null,B.Ps,null,null,null,null,null,null)
-B.b67=new A.a3("Bedoeld voor wie geen belang heeft bij de keuze van de klant, bijvoorbeeld geen producten verkoopt.",null,null,null,null,null,null,null,null)
+B.b60=new A.a3(null,B.b0c,B.b3P,null,null,null,null,null,null)
+B.b61=new A.a3("Ok\xe9",null,null,null,null,null,null,null,null)
+B.b62=new A.a3("Staat in de offerte",null,B.dU,null,null,null,null,null,null)
+B.b65=new A.a3("Vooraf",null,B.Ps,null,null,null,null,null,null)
+B.b66=new A.a3("Bedoeld voor wie geen belang heeft bij de keuze van de klant, bijvoorbeeld geen producten verkoopt.",null,null,null,null,null,null,null,null)
 B.PC=new A.a3("Back-up terugzetten",null,null,null,null,null,null,null,null)
-B.b68=new A.a3("Nieuwe VvE",null,null,null,null,null,null,null,null)
+B.b67=new A.a3("Nieuwe VvE",null,null,null,null,null,null,null,null)
 B.Vq=new A.L(1,0.5411764705882353,0.35294117647058826,0,B.D)
 B.b42=new A.A(!0,B.Vq,null,null,null,null,15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b69=new A.a3("? navragen",null,B.b42,null,null,null,null,null,null)
-B.b6a=new A.a3("Tijd voor een back-up?",null,B.fB,null,null,null,null,null,null)
-B.b6b=new A.a3("Weghalen",null,null,null,null,null,null,null,null)
-B.b6c=new A.a3("  \u203a  ",null,B.bh,null,null,null,null,null,null)
-B.b6e=new A.a3("Later",null,null,null,null,null,null,null,null)
-B.b6g=new A.a3("Voorbeeld-woning laden",null,null,null,null,null,null,null,null)
-B.b6h=new A.a3("Pro Gebouwen is een uitbreiding op Pro: zonnepanelen doorrekenen op het dak van een appartementencomplex; bedrijfsdaken komen er later bij.",null,B.nS,null,null,null,null,null,null)
-B.b6i=new A.a3("Gekozen",null,B.nW,null,null,null,null,null,null)
-B.b6j=new A.a3("Klaar \xb7 telt nu mee in de woning",null,B.dq,null,null,null,null,null,null)
-B.b6k=new A.a3("Nog geen offerte. Met een ingevulde offerte rekent Pro met die prijs in plaats van de bandbreedte.",null,B.bh,null,null,null,null,null,null)
-B.b6l=new A.a3("Openen",null,null,null,null,null,null,null,null)
-B.b6m=new A.a3("Wachtwoord vergeten?",null,null,null,null,null,null,null,null)
-B.b6n=new A.a3("Herladen",null,null,null,null,null,null,null,null)
-B.b6o=new A.a3("Voor welke variant?",null,null,null,null,null,null,null,null)
-B.b6p=new A.a3("Activeren",null,null,null,null,null,null,null,null)
-B.b6q=new A.a3("Zoek in de BAG",null,null,null,null,null,null,null,null)
+B.b68=new A.a3("? navragen",null,B.b42,null,null,null,null,null,null)
+B.b69=new A.a3("Tijd voor een back-up?",null,B.fB,null,null,null,null,null,null)
+B.b6a=new A.a3("Weghalen",null,null,null,null,null,null,null,null)
+B.b6b=new A.a3("  \u203a  ",null,B.bh,null,null,null,null,null,null)
+B.b6d=new A.a3("Later",null,null,null,null,null,null,null,null)
+B.b6f=new A.a3("Voorbeeld-woning laden",null,null,null,null,null,null,null,null)
+B.b6g=new A.a3("Gekozen",null,B.nW,null,null,null,null,null,null)
+B.b6h=new A.a3("Klaar \xb7 telt nu mee in de woning",null,B.dq,null,null,null,null,null,null)
+B.b6i=new A.a3("Nog geen offerte. Met een ingevulde offerte rekent Pro met die prijs in plaats van de bandbreedte.",null,B.bh,null,null,null,null,null,null)
+B.b6j=new A.a3("Openen",null,null,null,null,null,null,null,null)
+B.b6k=new A.a3("Wachtwoord vergeten?",null,null,null,null,null,null,null,null)
+B.b6l=new A.a3("Herladen",null,null,null,null,null,null,null,null)
+B.b6m=new A.a3("Voor welke variant?",null,null,null,null,null,null,null,null)
+B.b6n=new A.a3("Activeren",null,null,null,null,null,null,null,null)
+B.b6o=new A.a3("Zoek in de BAG",null,null,null,null,null,null,null,null)
 B.b3A=new A.A(!0,B.aR,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6r=new A.a3("\u2713",null,B.b3A,null,null,null,null,null,null)
-B.b6s=new A.a3("Offerte verwijderen?",null,null,null,null,null,null,null,null)
-B.b6u=new A.a3("Elektrische auto",null,null,null,null,null,null,null,null)
-B.b6v=new A.a3("Er zijn wijzigingen die nog niet in een back-up staan.",null,B.Pm,null,null,null,null,null,null)
-B.b6w=new A.a3("Download PDF",null,null,null,null,null,null,null,null)
-B.b6x=new A.a3("Nog nodig: aantal panelen en prijs (alles erbij, zonder btw).",null,B.bh,null,null,null,null,null,null)
+B.b6p=new A.a3("\u2713",null,B.b3A,null,null,null,null,null,null)
+B.b6q=new A.a3("Offerte verwijderen?",null,null,null,null,null,null,null,null)
+B.b6s=new A.a3("Elektrische auto",null,null,null,null,null,null,null,null)
+B.b6t=new A.a3("Er zijn wijzigingen die nog niet in een back-up staan.",null,B.Pm,null,null,null,null,null,null)
+B.b6u=new A.a3("Download PDF",null,null,null,null,null,null,null,null)
+B.b6v=new A.a3("Nog nodig: aantal panelen en prijs (alles erbij, zonder btw).",null,B.bh,null,null,null,null,null,null)
 B.PD=new A.a3("ALV-rapport maken",null,null,null,null,null,null,null,null)
-B.b6y=new A.a3("Toevoegen",null,null,null,null,null,null,null,null)
-B.b6z=new A.a3("Offertes toetsen",null,null,null,null,null,null,null,null)
-B.b6A=new A.a3("Stroom die het gebouw zelf gebruikt, blijft het meest opleveren; voor wat teruggaat betaalt de leverancier tot 2030 minstens de helft van de kale prijs (ACM).",null,B.bh,null,null,null,null,null,null)
-B.b6B=new A.a3("De klanten staan alleen in deze browser. Een back-upbestand buiten de browser voorkomt verlies.",null,B.bh,null,null,null,null,null,null)
-B.b6D=new A.a3("VvE verwijderen",null,null,null,null,null,null,null,null)
+B.b6w=new A.a3("Toevoegen",null,null,null,null,null,null,null,null)
+B.b6x=new A.a3("Offertes toetsen",null,null,null,null,null,null,null,null)
+B.b6y=new A.a3("Stroom die het gebouw zelf gebruikt, blijft het meest opleveren; voor wat teruggaat betaalt de leverancier tot 2030 minstens de helft van de kale prijs (ACM).",null,B.bh,null,null,null,null,null,null)
+B.b6z=new A.a3("De klanten staan alleen in deze browser. Een back-upbestand buiten de browser voorkomt verlies.",null,B.bh,null,null,null,null,null,null)
+B.b6B=new A.a3("VvE verwijderen",null,null,null,null,null,null,null,null)
 B.PE=new A.a3("Nog geen code?",null,B.bh,null,null,null,null,null,null)
-B.b6F=new A.a3("Back-up terugzetten?",null,null,null,null,null,null,null,null)
-B.b6G=new A.a3("Aandachtspunten",null,null,null,null,null,null,null,null)
-B.b6H=new A.a3("Gebruiksvoorwaarden",null,null,null,null,null,null,null,null)
-B.b6I=new A.a3("Klant verwijderen",null,null,null,null,null,null,null,null)
-B.b6J=new A.a3("Een onderdeel opent de vragen. Per punt: nog open, nagevraagd bij de juiste partij, of vastgelegd in de offerte. Alleen de punten die bij dit gebouw horen, staan erbij.",null,B.dq,null,null,null,null,null,null)
+B.b6D=new A.a3("Back-up terugzetten?",null,null,null,null,null,null,null,null)
+B.b6E=new A.a3("Aandachtspunten",null,null,null,null,null,null,null,null)
+B.b6F=new A.a3("Gebruiksvoorwaarden",null,null,null,null,null,null,null,null)
+B.b6G=new A.a3("Klant verwijderen",null,null,null,null,null,null,null,null)
+B.b6H=new A.a3("Een onderdeel opent de vragen. Per punt: nog open, nagevraagd bij de juiste partij, of vastgelegd in de offerte. Alleen de punten die bij dit gebouw horen, staan erbij.",null,B.dq,null,null,null,null,null,null)
 B.UO=new A.L(1,0.5411764705882353,0.29411764705882354,0,B.D)
 B.b31=new A.A(!0,B.UO,null,null,null,null,13,B.at,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6L=new A.a3("verplaatst",null,B.b31,null,null,null,null,null,null)
+B.b6J=new A.a3("verplaatst",null,B.b31,null,null,null,null,null,null)
 B.PF=new A.a3("Wijzigen",null,null,null,null,null,null,null,null)
 B.jK=new A.a3("Klaar",null,null,null,null,null,null,null,null)
-B.b6N=new A.a3("Kiezen voor het rapport",null,null,null,null,null,null,null,null)
+B.b6L=new A.a3("Kiezen voor het rapport",null,null,null,null,null,null,null,null)
 B.Px=new A.A(!0,B.id,null,null,null,null,14,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b6P=new A.a3("Weinig opbrengst per appartement: de algemene meter loont meestal beter.",null,B.Px,null,null,null,null,null,null)
-B.b6S=new A.a3("Een offerte met aantal panelen en prijs verschijnt hier met haar nummer.",null,B.bh,null,null,null,null,null,null)
-B.b6T=new A.a3("Die blijven bewaard in deze browser en gaan mee in de back-up. Met een code staan ze er direct weer.",null,B.bh,null,null,null,null,null,null)
-B.b6U=new A.a3('Vermeld "Onafhankelijk advies"',null,null,null,null,null,null,null,null)
-B.b6V=new A.a3("30 dagen proberen",null,null,null,null,null,null,null,null)
-B.b6X=new A.a3('Nog geen VvE\'s. Met "Nieuwe VvE" worden de zonnepanelen op het dak doorgerekend voor het bestuur en de ALV.',null,B.jJ,B.ek,null,null,null,null,null)
-B.b6Y=new A.a3("Rapport maken",null,null,null,null,null,null,null,null)
-B.b6Z=new A.a3("Geen logo",null,B.bh,null,null,null,null,null,null)
-B.b71=new A.a3("Wat v\xf3\xf3r de offerte nog na te vragen is, en wat Pro al meerekent bij een groter dak.",null,B.bh,null,null,null,null,null,null)
-B.b72=new A.a3("De stroomaansluiting moet nog beoordeeld worden: zie Aandachtspunten.",null,B.Px,null,null,null,null,null,null)
-B.b73=new A.a3("Nieuwe woning",null,null,null,null,null,null,null,null)
+B.b6N=new A.a3("Weinig opbrengst per appartement: de algemene meter loont meestal beter.",null,B.Px,null,null,null,null,null,null)
+B.b6Q=new A.a3("Een offerte met aantal panelen en prijs verschijnt hier met haar nummer.",null,B.bh,null,null,null,null,null,null)
+B.b6R=new A.a3("Die blijven bewaard in deze browser en gaan mee in de back-up. Met een code staan ze er direct weer.",null,B.bh,null,null,null,null,null,null)
+B.b6S=new A.a3("Pro Gebouwen is een uitbreiding op Pro: nu zonnepanelen doorrekenen op het dak van een appartementencomplex; er komen meer soorten gebouwen bij.",null,B.nS,null,null,null,null,null,null)
+B.b6T=new A.a3('Vermeld "Onafhankelijk advies"',null,null,null,null,null,null,null,null)
+B.b6U=new A.a3("30 dagen proberen",null,null,null,null,null,null,null,null)
+B.b6W=new A.a3('Nog geen VvE\'s. Met "Nieuwe VvE" worden de zonnepanelen op het dak doorgerekend voor het bestuur en de ALV.',null,B.jJ,B.ek,null,null,null,null,null)
+B.b6X=new A.a3("Rapport maken",null,null,null,null,null,null,null,null)
+B.b6Y=new A.a3("Geen logo",null,B.bh,null,null,null,null,null,null)
+B.b70=new A.a3("Wat v\xf3\xf3r de offerte nog na te vragen is, en wat Pro al meerekent bij een groter dak.",null,B.bh,null,null,null,null,null,null)
+B.b71=new A.a3("De stroomaansluiting moet nog beoordeeld worden: zie Aandachtspunten.",null,B.Px,null,null,null,null,null,null)
+B.b72=new A.a3("Nieuwe woning",null,null,null,null,null,null,null,null)
+B.b73=new A.a3("Pro Gebouwen (nu VvE's)",null,B.dU,null,null,null,null,null,null)
 B.b74=new A.a3("Terug",null,null,null,null,null,null,null,null)
 B.b0g=new A.dr('Gaat naar "Al gedaan"; het plan rekent verder vanaf de nieuwe situatie',null,null,B.aU,null,null,null,null,null,null,B.fC)
 B.aLP=s([B.b0g],t.VO)
