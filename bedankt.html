@@ -28,7 +28,8 @@
   p { margin: 0 0 0.9rem; }
   .kaart { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 1.5rem; }
   .klein { color: var(--muted); font-size: 1rem; }
-  .code { background: var(--vlak); border-radius: 12px; padding: 0.9rem 1rem; font-family: ui-monospace, Consolas, monospace;
+  [hidden] { display: none !important; }
+  .code { white-space: pre-wrap; background: var(--vlak); border-radius: 12px; padding: 0.9rem 1rem; font-family: ui-monospace, Consolas, monospace;
     font-size: 0.9rem; overflow-wrap: anywhere; user-select: all; margin: 0 0 1rem; }
   .knop { display: inline-block; font: inherit; font-weight: 700; color: #fff; background: var(--brand); border: 0;
     border-radius: 999px; padding: 0.75rem 1.4rem; cursor: pointer; text-decoration: none; }
@@ -50,7 +51,7 @@
   <section id="klaar" class="kaart" hidden>
     <h1>Bedankt voor uw bestelling</h1>
     <p>Licentie voor <strong id="naam"></strong>, geldig tot en met <strong id="tot"></strong>.</p>
-    <p>Uw licentiecode:</p>
+    <p id="codeKop">Uw licentiecode:</p>
     <p id="code" class="code"></p>
     <div class="knoppen">
       <button id="kopieer" class="knop" type="button">Code kopiëren</button>
@@ -94,17 +95,23 @@
         const [j, m, d] = uit.tot.split('-');
         document.getElementById('naam').textContent = uit.naam;
         document.getElementById('tot').textContent = `${d}-${m}-${j}`;
-        document.getElementById('code').textContent = uit.code;
+        if (uit.codeGebouwen) {
+          // Pro met Pro Gebouwen: twee codes, in één keer te kopiëren en te plakken.
+          document.getElementById('code').textContent = `${uit.code}\n\n${uit.codeGebouwen}`;
+          document.getElementById('codeKop').textContent = 'Uw licentiecodes (Pro en Pro Gebouwen):';
+          document.getElementById('kopieer').textContent = 'Codes kopiëren';
+          document.getElementById('stap2').textContent = 'Plak beide codes in één keer in het bovenste vak. Uw klantgegevens blijven gewoon staan.';
+        } else {
+          document.getElementById('code').textContent = uit.code;
+        }
         if (uit.product === 'gebouwen') {
-          // Pro Gebouwen heeft een eigen vak op de kaart Licentie.
-          document.getElementById('stap1').innerHTML = 'Open EnergieVriend Pro en ga naar <strong>Instellingen</strong> (op een laptop: <strong>Back-up en licentie</strong>), kaart <strong>Licentie</strong>, onder <strong>Pro Gebouwen</strong>.';
-          document.getElementById('stap2').textContent = "Plak de code. Pro Gebouwen (VvE's en bedrijfsdaken) is een uitbreiding: uw licentie voor Pro zelf blijft apart. Uw klantgegevens blijven gewoon staan.";
-          document.getElementById('opnieuw').href = 'bestel.html?product=gebouwen';
+          document.getElementById('stap2').textContent = 'Plak de code. Pro Gebouwen loopt tot dezelfde dag als uw licentie voor Pro. Uw klantgegevens blijven gewoon staan.';
         }
         return toon('klaar');
       }
       if (MISLUKT.includes(uit.status)) {
         if (uit.product === 'gebouwen') document.getElementById('opnieuw').href = 'bestel.html?product=gebouwen';
+        if (uit.product === 'beide') document.getElementById('opnieuw').href = 'bestel.html?gebouwen=1';
         return toon('mislukt');
       }
       if (uit.fout) return toon('onbekend');
