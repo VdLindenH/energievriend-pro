@@ -57,8 +57,8 @@
       <a class="knop rand" href="./">Open Pro</a>
     </div>
     <ol>
-      <li>Open EnergieVriend Pro en ga naar <strong>Instellingen</strong> (op een laptop: <strong>Back-up en licentie</strong>), kaart <strong>Licentie</strong>.</li>
-      <li>Plak de code. Uw klantgegevens blijven gewoon staan.</li>
+      <li id="stap1">Open EnergieVriend Pro en ga naar <strong>Instellingen</strong> (op een laptop: <strong>Back-up en licentie</strong>), kaart <strong>Licentie</strong>.</li>
+      <li id="stap2">Plak de code. Uw klantgegevens blijven gewoon staan.</li>
     </ol>
     <p class="klein" style="margin-top:1.25rem">U krijgt dezelfde code ook per e-mail. De factuur komt in een aparte e-mail.</p>
   </section>
@@ -66,7 +66,7 @@
   <section id="mislukt" class="kaart" hidden>
     <h1>De betaling is niet gelukt</h1>
     <p>Er is niets afgeschreven. U kunt het opnieuw proberen.</p>
-    <a class="knop" href="bestel.html">Opnieuw bestellen</a>
+    <a id="opnieuw" class="knop" href="bestel.html">Opnieuw bestellen</a>
   </section>
 
   <section id="onbekend" class="kaart" hidden>
@@ -95,9 +95,18 @@
         document.getElementById('naam').textContent = uit.naam;
         document.getElementById('tot').textContent = `${d}-${m}-${j}`;
         document.getElementById('code').textContent = uit.code;
+        if (uit.product === 'gebouwen') {
+          // Pro Gebouwen heeft een eigen vak op de kaart Licentie.
+          document.getElementById('stap1').innerHTML = 'Open EnergieVriend Pro en ga naar <strong>Instellingen</strong> (op een laptop: <strong>Back-up en licentie</strong>), kaart <strong>Licentie</strong>, onder <strong>Pro Gebouwen</strong>.';
+          document.getElementById('stap2').textContent = "Plak de code. Pro Gebouwen (VvE's en bedrijfsdaken) is een uitbreiding: uw licentie voor Pro zelf blijft apart. Uw klantgegevens blijven gewoon staan.";
+          document.getElementById('opnieuw').href = 'bestel.html?product=gebouwen';
+        }
         return toon('klaar');
       }
-      if (MISLUKT.includes(uit.status)) return toon('mislukt');
+      if (MISLUKT.includes(uit.status)) {
+        if (uit.product === 'gebouwen') document.getElementById('opnieuw').href = 'bestel.html?product=gebouwen';
+        return toon('mislukt');
+      }
       if (uit.fout) return toon('onbekend');
     } catch {
       // Geen verbinding: gewoon opnieuw proberen.

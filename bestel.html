@@ -49,11 +49,12 @@
 <body>
 <main>
   <a class="terug" href="./">← Terug naar EnergieVriend Pro</a>
-  <h1>Licentie bestellen</h1>
+  <h1 id="kop">Licentie bestellen</h1>
 
   <div class="kaart">
-    <p class="prijs">€ 290 per jaar <span class="klein">excl. btw</span></p>
-    <p class="klein">U betaalt € 350,90 incl. 21% btw, met iDEAL. Alleen voor bedrijven en organisaties in Nederland.</p>
+    <p id="productnaam" class="klein" hidden>EnergieVriend Pro Gebouwen: de uitbreiding voor VvE's en bedrijfsdaken. U hebt daarnaast een licentie voor EnergieVriend Pro zelf nodig.</p>
+    <p class="prijs"><span id="bedrag">€ 290</span> per jaar <span class="klein">excl. btw</span></p>
+    <p class="klein">U betaalt <span id="bedragIncl">€ 350,90</span> incl. 21% btw, met iDEAL. Alleen voor bedrijven en organisaties in Nederland.</p>
 
     <p id="verleng" class="klein" hidden>U verlengt uw licentie. De nieuwe licentie loopt een jaar vanaf de einddatum van uw huidige licentie.</p>
 
@@ -111,8 +112,18 @@
   if (vraag.get('naam')) naam.value = vraag.get('naam').slice(0, 100);
   // Verlengen vanuit Pro: de huidige code gaat mee, de nieuwe licentie sluit erop aan.
   const verleng = vraag.get('code') || undefined;
+  // De uitbreiding Pro Gebouwen (VvE's en bedrijfsdaken) heeft een eigen prijs; de prijs
+  // die echt geldt staat in de bestelfunctie, niet hier.
+  const product = vraag.get('product') === 'gebouwen' ? 'gebouwen' : 'pro';
+  if (product === 'gebouwen') {
+    document.title = 'Pro Gebouwen bestellen, EnergieVriend Pro';
+    document.getElementById('kop').textContent = 'Pro Gebouwen bestellen';
+    document.getElementById('productnaam').hidden = false;
+    document.getElementById('bedrag').textContent = '€ 190';
+    document.getElementById('bedragIncl').textContent = '€ 229,90';
+  }
   if (verleng) {
-    document.querySelector('h1').textContent = 'Licentie verlengen';
+    document.getElementById('kop').textContent = product === 'gebouwen' ? 'Pro Gebouwen verlengen' : 'Licentie verlengen';
     document.getElementById('verleng').hidden = false;
   }
 
@@ -129,6 +140,7 @@
       plaats: document.getElementById('plaats').value,
       nummer: document.getElementById('nummer').value,
       verleng,
+      product,
       akkoord: document.getElementById('akkoord').checked,
     };
     knop.disabled = true;
