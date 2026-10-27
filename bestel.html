@@ -56,6 +56,8 @@
     <p class="prijs"><span id="bedrag">€ 290</span> per jaar <span class="klein">excl. btw</span></p>
     <p class="klein">U betaalt <span id="bedragIncl">€ 350,90</span> incl. 21% btw, met iDEAL. Alleen voor bedrijven en organisaties in Nederland.</p>
 
+    <p id="alleenPro" class="fout" hidden>Pro Gebouwen bestelt u vanuit EnergieVriend Pro (Instellingen, kaart Licentie), met een licentie voor Pro.</p>
+
     <p id="verleng" class="klein" hidden>U verlengt uw licentie. De nieuwe licentie loopt een jaar vanaf de einddatum van uw huidige licentie.</p>
 
     <form id="formulier" novalidate>
@@ -115,12 +117,23 @@
   // De uitbreiding Pro Gebouwen (VvE's en bedrijfsdaken) heeft een eigen prijs; de prijs
   // die echt geldt staat in de bestelfunctie, niet hier.
   const product = vraag.get('product') === 'gebouwen' ? 'gebouwen' : 'pro';
+  // Gebouwen bestel je vanuit Pro: de code van Pro gaat mee (basis) en de bestelfunctie
+  // controleert hem. Bewaard voor "Opnieuw bestellen" op de bedankpagina.
+  let basis = vraag.get('basis') || undefined;
+  try {
+    if (basis) sessionStorage.setItem('basis', basis);
+    else basis = sessionStorage.getItem('basis') || undefined;
+  } catch {}
   if (product === 'gebouwen') {
     document.title = 'Pro Gebouwen bestellen, EnergieVriend Pro';
     document.getElementById('kop').textContent = 'Pro Gebouwen bestellen';
     document.getElementById('productnaam').hidden = false;
     document.getElementById('bedrag').textContent = '€ 190';
     document.getElementById('bedragIncl').textContent = '€ 229,90';
+    if (!basis) {
+      document.getElementById('alleenPro').hidden = false;
+      document.getElementById('formulier').hidden = true;
+    }
   }
   if (verleng) {
     document.getElementById('kop').textContent = product === 'gebouwen' ? 'Pro Gebouwen verlengen' : 'Licentie verlengen';
@@ -141,6 +154,7 @@
       nummer: document.getElementById('nummer').value,
       verleng,
       product,
+      basis: product === 'gebouwen' ? basis : undefined,
       akkoord: document.getElementById('akkoord').checked,
     };
     knop.disabled = true;
