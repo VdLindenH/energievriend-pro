@@ -31,7 +31,7 @@
   .prijs { font-size: 1.5rem; font-weight: 700; margin: 0; }
   .klein { color: var(--muted); font-size: 1rem; }
   label { display: block; font-weight: 700; margin: 1.1rem 0 0.35rem; }
-  input[type=text], input[type=email] { width: 100%; font: inherit; color: var(--ink); background: var(--bg);
+  input[type=text], input[type=email], input[type=number] { width: 100%; font: inherit; color: var(--ink); background: var(--bg);
     border: 1px solid var(--line); border-radius: 12px; padding: 0.7rem 0.9rem; }
   [hidden] { display: none !important; }
   .vink { display: flex; gap: 0.6rem; align-items: flex-start; font-weight: 400; }
@@ -41,6 +41,7 @@
   @media (prefers-color-scheme: dark) { button { color: #0e1a11; } }
   button:disabled { opacity: 0.6; cursor: default; }
   .fout { color: var(--fout); margin: 1rem 0 0; min-height: 1.65em; }
+  .aantal { width: 7rem !important; }
   .rij { display: grid; grid-template-columns: 9rem 1fr; gap: 0 0.75rem; }
   @media (max-width: 380px) { .rij { grid-template-columns: 1fr; } }
   ul { margin: 1.5rem 0 0; padding-left: 1.25rem; display: grid; gap: 0.45rem; }
@@ -55,6 +56,7 @@
   <div class="kaart">
     <p id="productnaam" class="klein" hidden>EnergieVriend Pro Gebouwen (VvE's en bedrijfsdaken) bij uw licentie voor Pro. Het loopt tot <strong id="erbijTot"></strong>, dezelfde dag als uw licentie voor Pro. U betaalt alleen voor de dagen tot dan.</p>
     <p class="prijs"><span id="bedrag">€ 290</span> <span id="perJaar">per jaar</span> <span class="klein">excl. btw</span></p>
+    <p id="perGebruiker" class="klein" hidden></p>
     <p class="klein">U betaalt <span id="bedragIncl">€ 350,90</span> incl. 21% btw met iDEAL. Alleen voor bedrijven en organisaties in Nederland.</p>
 
     <label id="metGebouwenRij" class="vink"><input id="metGebouwen" type="checkbox"> <span>Met Pro Gebouwen (VvE's en bedrijfsdaken), €&nbsp;190 per jaar excl. btw erbij. Beide licenties lopen tot dezelfde dag.</span></label>
@@ -62,11 +64,19 @@
     <p id="alleenPro" class="fout" hidden>Pro Gebouwen erbij bestelt u vanuit EnergieVriend Pro (Instellingen, kaart Licentie) met een licentie voor Pro. Of bestel Pro met Pro Gebouwen samen: <a href="bestel.html?gebouwen=1">Pro met Pro Gebouwen bestellen</a>.</p>
 
     <p id="verleng" class="klein" hidden>U verlengt uw licentie. De nieuwe licentie loopt een jaar vanaf de einddatum van uw huidige licentie.</p>
+    <p id="vanGebruiker" class="klein" hidden>Licentie van: <strong id="gebruikerNaam"></strong></p>
 
     <form id="formulier" novalidate>
       <label for="naam">Naam van uw bedrijf of organisatie</label>
       <input id="naam" name="naam" type="text" autocomplete="organization" maxlength="100" required>
-      <p class="klein" style="margin:0.35rem 0 0">Deze naam staat in uw licentiecode en op de factuur.</p>
+      <p id="naamUitleg" class="klein" style="margin:0.35rem 0 0">Deze naam staat op de factuur en in de code van elke gebruiker.</p>
+
+      <div id="gebruikersblok">
+        <label for="aantal">Aantal gebruikers</label>
+        <input id="aantal" class="aantal" type="number" min="1" max="50" step="1" value="1" inputmode="numeric">
+        <p class="klein" style="margin:0.35rem 0 0">Elke gebruiker krijgt een eigen code op naam. Een code werkt op twee apparaten tegelijk, bijvoorbeeld laptop en tablet.</p>
+        <div id="namen"></div>
+      </div>
 
       <label for="email">E-mailadres</label>
       <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
@@ -98,7 +108,7 @@
 
     <ul class="klein">
       <li>Na betaling ziet u de licentiecode direct en krijgt u hem ook per e-mail.</li>
-      <li>De licentie geldt een jaar voor één adviseur of bedrijf. Met Pro Gebouwen lopen beide licenties tot dezelfde dag.</li>
+      <li>De licentie geldt een jaar per gebruiker. Met Pro Gebouwen lopen beide licenties tot dezelfde dag.</li>
       <li>Verlengen gaat niet vanzelf.</li>
     </ul>
   </div>
@@ -128,6 +138,34 @@
     document.getElementById('bedragIncl').textContent = euro(Math.round(excl * 121) / 100);
   };
   const erbij = vraag.get('product') === 'gebouwen';
+  // Licentie per gebruiker (30-10-2026): bij een nieuwe bestelling een aantal en
+  // per gebruiker een naam. Verlengen en Gebouwen erbij gaan per gebruiker: dan
+  // komt de naam uit de meegegeven code.
+  const aantalVeld = document.getElementById('aantal');
+  const namen = document.getElementById('namen');
+  const aantal = () => Math.min(50, Math.max(1, Math.floor(Number(aantalVeld.value)) || 1));
+  const tekenNamen = () => {
+    const n = aantal();
+    while (namen.children.length > n) namen.lastElementChild.remove();
+    while (namen.children.length < n) {
+      const i = namen.children.length + 1;
+      const vak = document.createElement('div');
+      vak.innerHTML = `<label for="gebruiker${i}"></label><input id="gebruiker${i}" type="text" maxlength="60" autocomplete="off" required>`;
+      namen.append(vak);
+    }
+    [...namen.children].forEach((vak, i) => {
+      vak.querySelector('label').textContent = n === 1 ? 'Naam van de gebruiker' : `Naam gebruiker ${i + 1}`;
+    });
+  };
+  /** De naam (n) uit een code, of null. */
+  const naamVan = (code) => {
+    try {
+      const kern = code.replace(/\s+/g, '').slice(6).split('.')[0].replaceAll('-', '+').replaceAll('_', '/');
+      return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(kern), (c) => c.charCodeAt(0)))).n ?? null;
+    } catch {
+      return null;
+    }
+  };
   const metGebouwen = document.getElementById('metGebouwen');
   metGebouwen.checked = vraag.get('gebouwen') === '1';
   // Gebouwen erbij bestel je vanuit Pro: de code van Pro gaat mee (basis) en de
@@ -164,9 +202,32 @@
       toonPrijs(Math.max(1, Math.round((PRIJS_GEBOUWEN * dagen) / 365)));
     }
   } else {
-    const werkPrijs = () => toonPrijs(PRIJS_PRO + (metGebouwen.checked ? PRIJS_GEBOUWEN : 0));
+    const werkPrijs = () => {
+      const per = PRIJS_PRO + (metGebouwen.checked ? PRIJS_GEBOUWEN : 0);
+      const n = verleng ? 1 : aantal();
+      toonPrijs(per * n);
+      const regel = document.getElementById('perGebruiker');
+      regel.hidden = n === 1;
+      regel.textContent = `${n} gebruikers van ${euro(per)} per jaar excl. btw`;
+    };
     metGebouwen.addEventListener('change', werkPrijs);
+    aantalVeld.addEventListener('input', () => {
+      tekenNamen();
+      werkPrijs();
+    });
     werkPrijs();
+  }
+  const vanCode = erbij ? basis : verleng;
+  if (vanCode) {
+    document.getElementById('gebruikersblok').hidden = true;
+    document.getElementById('naamUitleg').textContent = 'Deze naam staat op de factuur.';
+    const n = naamVan(vanCode);
+    if (n) {
+      document.getElementById('vanGebruiker').hidden = false;
+      document.getElementById('gebruikerNaam').textContent = n;
+    }
+  } else {
+    tekenNamen();
   }
   if (verleng && !erbij) {
     document.getElementById('kop').textContent = 'Licentie verlengen';
@@ -188,6 +249,7 @@
       verleng: erbij ? undefined : verleng,
       product: erbij ? 'gebouwen' : metGebouwen.checked ? 'beide' : 'pro',
       basis: erbij ? basis : undefined,
+      gebruikers: vanCode ? undefined : [...namen.querySelectorAll('input')].map((v) => v.value),
       akkoord: document.getElementById('akkoord').checked,
     };
     knop.disabled = true;

@@ -35,6 +35,8 @@
     border-radius: 999px; padding: 0.75rem 1.4rem; cursor: pointer; text-decoration: none; }
   @media (prefers-color-scheme: dark) { .knop { color: #0e1a11; } }
   .rand { background: transparent; color: var(--brand); border: 2px solid var(--brand); }
+  .gebruiker { margin: 1.25rem 0 0.4rem; font-weight: 700; }
+  .klein-knop { font-size: 1rem; padding: 0.5rem 1.1rem; margin-bottom: 0.5rem; }
   .knoppen { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.5rem 0 1.25rem; }
   ol { padding-left: 1.25rem; display: grid; gap: 0.45rem; margin: 0; }
   [hidden] { display: none !important; }
@@ -64,6 +66,14 @@
     <p class="klein" style="margin-top:1.25rem">U krijgt dezelfde code ook per e-mail. De factuur komt in een aparte e-mail.</p>
   </section>
 
+  <section id="klaarMeer" class="kaart" hidden>
+    <h1>Bedankt voor uw bestelling</h1>
+    <p>Licenties voor <strong id="aantal"></strong> gebruikers, geldig tot en met <strong id="totMeer"></strong>.</p>
+    <p>Geef elke gebruiker de eigen code. Die plakt de code in Pro bij <strong>Instellingen</strong> (op een laptop: <strong>Back-up en licentie</strong>), kaart <strong>Licentie</strong>. Een code werkt op twee apparaten tegelijk, bijvoorbeeld laptop en tablet.</p>
+    <div id="lijst"></div>
+    <p class="klein" style="margin-top:1.25rem">U krijgt alle codes ook per e-mail. De factuur komt in een aparte e-mail.</p>
+  </section>
+
   <section id="mislukt" class="kaart" hidden>
     <h1>De betaling is niet gelukt</h1>
     <p>Er is niets afgeschreven. Probeer het gerust opnieuw.</p>
@@ -91,6 +101,28 @@
     if (!id) return toon('onbekend');
     try {
       const uit = await (await fetch(`${FUNCTIE}/status?id=${encodeURIComponent(id)}`)).json();
+      if (uit.status === 'paid' && uit.licenties) {
+        // Meer gebruikers: per gebruiker de eigen code(s) met een kopieerknop.
+        const [j, m, d] = uit.tot.split('-');
+        document.getElementById('aantal').textContent = uit.licenties.length;
+        document.getElementById('totMeer').textContent = `${d}-${m}-${j}`;
+        const lijst = document.getElementById('lijst');
+        for (const l of uit.licenties) {
+          const kop = document.createElement('p');
+          kop.className = 'gebruiker';
+          kop.textContent = l.naam;
+          const code = document.createElement('p');
+          code.className = 'code';
+          code.textContent = l.codeGebouwen ? `${l.code}\n\n${l.codeGebouwen}` : l.code;
+          const knop = document.createElement('button');
+          knop.type = 'button';
+          knop.className = 'knop klein-knop';
+          knop.textContent = l.codeGebouwen ? 'Codes kopiëren' : 'Code kopiëren';
+          knop.addEventListener('click', () => kopieer(knop, code.textContent));
+          lijst.append(kop, code, knop);
+        }
+        return toon('klaarMeer');
+      }
       if (uit.status === 'paid') {
         const [j, m, d] = uit.tot.split('-');
         document.getElementById('naam').textContent = uit.naam;
@@ -129,14 +161,18 @@
     else toon('onbekend');
   }
 
-  document.getElementById('kopieer').addEventListener('click', async (e) => {
+  async function kopieer(knop, tekst) {
     try {
-      await navigator.clipboard.writeText(document.getElementById('code').textContent);
-      e.target.textContent = 'Gekopieerd';
+      await navigator.clipboard.writeText(tekst);
+      knop.textContent = 'Gekopieerd';
     } catch {
-      e.target.textContent = 'Selecteer de code en kopieer hem';
+      knop.textContent = 'Selecteer de code en kopieer hem';
     }
-  });
+  }
+
+  document.getElementById('kopieer').addEventListener('click', (e) =>
+    kopieer(e.target, document.getElementById('code').textContent),
+  );
 
   kijk(0);
 </script>
