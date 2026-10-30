@@ -141,7 +141,7 @@
         document.getElementById('openPro').href = `./#/backup?code=${encodeURIComponent(codes)}`;
         document.getElementById('stap1').textContent = 'Klik op "Open Pro en activeer": Pro zet de code er zelf in (in deze browser).';
         const welke = uit.codeGebouwen ? 'beide codes (in één keer)' : 'de code';
-        document.getElementById('stap2').textContent = `Gebruikt u Pro in een andere browser of op een ander apparaat? Kopieer ${welke} dan en plak ${uit.codeGebouwen ? 'ze' : 'hem'} daar bij Instellingen (op een laptop: Back-up en licentie), kaart Licentie. Uw klantgegevens blijven gewoon staan.`;
+        document.getElementById('stap2').textContent = `Gebruikt u Pro in een andere browser of op een ander apparaat? Kopieer ${welke} dan en plak ${uit.codeGebouwen ? 'ze' : 'hem'} daar bij Instellingen (op een laptop: Back-up en licentie), kaart Licentie. De code werkt op twee apparaten tegelijk. Uw klantgegevens blijven gewoon staan.`;
         if (uit.product === 'gebouwen') {
           document.getElementById('stap2').textContent += ' Pro Gebouwen loopt tot dezelfde dag als uw licentie voor Pro.';
         }
