@@ -1,0 +1,9 @@
+# EnergieVriend Pro: juiste types, compressie en altijd de nieuwste versie.
+AddType application/wasm .wasm
+AddType text/javascript .js .mjs
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/manifest+json application/wasm image/svg+xml
+</IfModule>
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=0, must-revalidate"
+</IfModule>
